@@ -1,0 +1,120 @@
+---
+// src/pages/roles.astro
+import Layout from '../../layouts/Layout.astro';
+
+// ---------------------------------------------------------
+// TEMPORARY DATA: Simulating your Unreal Engine JSON export.
+// When ready, replace this with: import rolesData from '../data/roles.json';
+// ---------------------------------------------------------
+const teams = ["Town", "Wolves", "Neutral"];
+const rolesData = Array.from({ length: 113 }).map((_, i) => {
+  const team = teams[Math.floor(Math.random() * teams.length)];
+  return {
+    id: `role-${i + 1}`,
+    name: `Character ${i + 1}`,
+    team: team,
+    // Using an Unsplash placeholder that generates unique portraits based on the ID
+    portraitUrl: `https://picsum.photos/seed/${i + 100}/300/450`
+  };
+});
+---
+
+<Layout title="Role Directory | Werewolves Revenge">
+  
+  <!-- HEADER SECTION -->
+  <header class="bg-zinc-950 pt-24 pb-12 px-6 border-b border-zinc-800 relative overflow-hidden">
+    <!-- Atmospheric Background Glow -->
+    <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-zinc-800/40 via-zinc-950 to-zinc-950 z-0"></div>
+    
+    <div class="max-w-7xl mx-auto relative z-10 text-center">
+      <h1 class="text-5xl md:text-6xl font-black text-white uppercase tracking-tighter mb-4 drop-shadow-lg">
+        The <span class="text-red-600">Roles</span>
+      </h1>
+      <p class="text-zinc-400 text-lg max-w-2xl mx-auto mb-8">
+        Click on any portrait to view their abilities, mechanics, and strategies.
+      </p>
+
+      <!-- SEARCH & FILTER UI (Visual structure ready for JS later) -->
+      <div class="flex flex-col md:flex-row justify-center items-center gap-4 max-w-3xl mx-auto">
+        <input 
+          type="text" 
+          placeholder="Search 100+ roles..." 
+          class="w-full md:w-96 bg-zinc-900 border border-zinc-700 text-white px-6 py-3 rounded-md focus:outline-none focus:border-red-500 focus:ring-1 focus:ring-red-500 transition-colors placeholder-zinc-600"
+        />
+        <div class="flex gap-2">
+          <button class="bg-zinc-800 hover:bg-zinc-700 text-zinc-300 px-4 py-3 rounded-md text-sm font-bold uppercase tracking-wider transition-colors">All</button>
+          <button class="bg-zinc-900 border border-emerald-900/50 hover:bg-emerald-900/30 text-emerald-500 px-4 py-3 rounded-md text-sm font-bold uppercase tracking-wider transition-colors">Town</button>
+          <button class="bg-zinc-900 border border-red-900/50 hover:bg-red-900/30 text-red-500 px-4 py-3 rounded-md text-sm font-bold uppercase tracking-wider transition-colors">Wolves</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- GRID SECTION -->
+  <main class="bg-zinc-950 min-h-screen py-16 px-4 md:px-8 relative z-20">
+    <div class="max-w-[1400px] mx-auto">
+      
+      <!-- 
+        CSS GRID: 
+        - Mobile: 3 columns
+        - Tablet: 5 columns
+        - Desktop: 8 columns 
+        - Large Screens: 10 columns
+      -->
+      <div class="grid grid-cols-3 sm:grid-cols-5 md:grid-cols-8 lg:grid-cols-10 gap-3 md:gap-4">
+        
+        {rolesData.map((role) => {
+          // Dynamic border colors based on alignment
+          let borderGlow = "hover:border-zinc-500 hover:shadow-zinc-500/50";
+          if (role.team === "Town") borderGlow = "hover:border-emerald-500 hover:shadow-emerald-500/50";
+          if (role.team === "Wolves") borderGlow = "hover:border-red-500 hover:shadow-red-500/50";
+          if (role.team === "Neutral") borderGlow = "hover:border-amber-500 hover:shadow-amber-500/50";
+
+          return (
+            /* 
+              LINK ROUTING: 
+              This builds the URL automatically based on the role ID (e.g., /roles/role-1) 
+            */
+            <a 
+              href={`/roles/${role.id}`} 
+              class={`group relative block aspect-[2/3] bg-zinc-900 rounded border border-zinc-800 overflow-hidden transition-all duration-300 hover:scale-110 hover:z-30 hover:shadow-[0_0_20px_rgba(0,0,0,0.8)] ${borderGlow}`}
+            >
+              <!-- Portrait Image -->
+              <img 
+                src={role.portraitUrl} 
+                alt={role.name} 
+                class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-300"
+                loading="lazy"
+              />
+              
+              <!-- Dark Gradient overlay at the bottom so text is readable -->
+              <div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent opacity-90"></div>
+              
+              <!-- Role Name Label -->
+              <div class="absolute bottom-0 left-0 right-0 p-2 text-center translate-y-1 group-hover:translate-y-0 transition-transform duration-300">
+                <span class="block text-white font-bold text-xs md:text-sm truncate drop-shadow-md">
+                  {role.name}
+                </span>
+                <span class={`block text-[10px] font-bold uppercase tracking-widest ${
+                  role.team === 'Town' ? 'text-emerald-400' : 
+                  role.team === 'Wolves' ? 'text-red-500' : 'text-amber-400'
+                }`}>
+                  {role.team}
+                </span>
+              </div>
+            </a>
+          );
+        })}
+        
+      </div>
+    </div>
+  </main>
+</Layout>
+
+<style is:global>
+  /* Keeps the search bar placeholder text visible but dark */
+  ::placeholder {
+    color: #52525b; /* zinc-600 */
+    opacity: 1; 
+  }
+</style>

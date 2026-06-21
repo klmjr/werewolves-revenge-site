@@ -1,3 +1,8 @@
+---
+// src/layouts/Layout.astro
+import '../styles/global.css';
+---
+
 <!doctype html>
 <html lang="en">
 	<head>
@@ -11,16 +16,38 @@
 	<body>
 		<nav class="main-nav">
 			<a href="/">Home</a>
-			<a href="/roles">View Roles</a>
-			<a href="/play">How to Play</a>
+			<a href="/play">Play</a>
+			<a href="/roles">Roles</a>
 		</nav>
 
 		<slot />
 	</body>
 </html>
 
-<style>
+<style is:global> /* Added 'is:global' so this font rules applies to all sub-pages too! */
+	
+	/* 1. DEFINE YOUR CUSTOM FONT */
+	@font-face {
+		font-family: 'MyCustomGameFont';
+		src: url('/fonts/MyGameFont.ttf') format('truetype');
+		font-weight: normal;
+		font-style: normal;
+		font-display: swap;
+	}
+
 	html,
+	body {
+		margin: 0;
+		width: 100%;
+		height: 100%;
+		
+		/* 2. USE YOUR CUSTOM FONT */
+		font-family: 'MyCustomGameFont', sans-serif;
+		background: #181411;
+		color: #ffffff;
+	}
+
+    html,
 	body {
 		margin: 0;
 		width: 100%;
@@ -30,7 +57,6 @@
 
 	/* Optional styling to make your navigation look clean and spaced out */
 	.main-nav {
-		background: #111;
 		padding: 1rem;
 		display: flex;
 		gap: 1.5rem;
@@ -43,6 +69,6 @@
 	}
 
 	.main-nav a:hover {
-		color: #e51b1b; /* Turns red on hover to match your game vibe */
+		color: #d1d1d1; /* Turns red on hover to match your game vibe */
 	}
 </style>

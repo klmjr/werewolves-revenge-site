@@ -1,0 +1,118 @@
+---
+// src/pages/roles/[id].astro
+import Layout from '../../layouts/Layout.astro';
+
+// 1. THIS FUNCTION GENERATES ALL 100 PAGES AUTOMATICALLY
+export async function getStaticPaths() {
+  // TEMPORARY: This is your mock Unreal Engine data. 
+  // Later, you will replace this array with: import rolesData from '../../data/roles.json';
+  const rolesData = [
+    { 
+      id: "werewolf", 
+      name: "Werewolf", 
+      team: "Wolves", 
+      category: "Killing", 
+      description: "You are the apex predator. Each night, communicate with the other wolves to select one player to eliminate. If you are the last wolf standing, your attacks cannot be healed or protected against.",
+      quote: "The moon is full, and the town is sleeping. It's time to eat.",
+      portraitUrl: "https://images.unsplash.com/photo-1621112904887-419379ce6824?q=80&w=800&auto=format&fit=crop"
+    },
+    { 
+      id: "seer", 
+      name: "Seer", 
+      team: "Town", 
+      category: "Investigative", 
+      description: "You possess the gift of true sight. Each night, you may target one player to reveal their true alignment. Use your information carefully to lead the Town, but avoid drawing the Wolves' attention.",
+      quote: "The shadows cannot hide the truth from my eyes.",
+      portraitUrl: "https://images.unsplash.com/photo-1534367507873-d4d7e4f48518?q=80&w=800&auto=format&fit=crop"
+    }
+  ];
+
+  // Map through the data and tell Astro to create a route for each 'id'
+  return rolesData.map((role) => {
+    return {
+      params: { id: role.id }, // Creates the URL path (/roles/werewolf)
+      props: { role },         // Passes the specific role's data to the HTML below
+    };
+  });
+}
+
+// 2. GRAB THE DATA FOR THE CURRENT PAGE
+const { role } = Astro.props;
+
+// 3. DYNAMIC COLOR LOGIC based on alignment
+let themeColor = "text-zinc-500 border-zinc-500";
+let bgGlow = "from-zinc-900/20";
+if (role.team === "Town") { themeColor = "text-emerald-500 border-emerald-500"; bgGlow = "from-emerald-900/20"; }
+if (role.team === "Wolves") { themeColor = "text-red-500 border-red-500"; bgGlow = "from-red-900/20"; }
+if (role.team === "Neutral") { themeColor = "text-amber-500 border-amber-500"; bgGlow = "from-amber-900/20"; }
+---
+
+<Layout title={`${role.name} | Werewolves Revenge`}>
+  
+  <main class="bg-zinc-950 min-h-screen text-zinc-100 relative overflow-hidden pb-24">
+    
+    <!-- Atmospheric Background Glow tied to the role's team color -->
+    <div class={`absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] ${bgGlow} via-zinc-950 to-zinc-950 z-0 opacity-60`}></div>
+
+    <div class="max-w-6xl mx-auto px-6 pt-12 md:pt-24 relative z-10">
+      
+      <!-- Breadcrumb Navigation -->
+      <nav class="mb-12">
+        <a href="/roles" class="text-zinc-500 hover:text-white uppercase tracking-widest text-sm font-bold transition-colors flex items-center gap-2">
+          <span>&larr;</span> Back to All Roles
+        </a>
+      </nav>
+
+      <div class="grid md:grid-cols-[1fr_2fr] gap-12 lg:gap-24 items-start">
+        
+        <!-- LEFT COLUMN: Portrait -->
+        <div class="relative group">
+          <div class={`absolute -inset-1 bg-gradient-to-b ${themeColor.split(' ')[0].replace('text', 'from')} to-transparent rounded-lg blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200`}></div>
+          <div class="relative aspect-[2/3] bg-zinc-900 rounded-lg border border-zinc-800 overflow-hidden shadow-2xl">
+            <img 
+              src={role.portraitUrl} 
+              alt={role.name} 
+              class="w-full h-full object-cover opacity-90"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/20 to-transparent"></div>
+          </div>
+        </div>
+
+        <!-- RIGHT COLUMN: Details -->
+        <div class="py-6">
+          
+          <!-- Badges -->
+          <div class="flex flex-wrap gap-3 mb-6">
+            <span class={`px-4 py-1 rounded border bg-zinc-950/50 backdrop-blur-sm text-xs font-black uppercase tracking-widest ${themeColor}`}>
+              {role.team}
+            </span>
+            <span class="px-4 py-1 rounded border border-zinc-700 bg-zinc-800/50 backdrop-blur-sm text-xs font-bold uppercase tracking-widest text-zinc-300">
+              {role.category}
+            </span>
+          </div>
+
+          <!-- Title -->
+          <h1 class="text-6xl md:text-8xl font-black uppercase tracking-tighter mb-6 drop-shadow-lg">
+            {role.name}
+          </h1>
+
+          <!-- Flavor Text / Quote -->
+          <blockquote class="text-xl md:text-2xl text-zinc-400 font-medium italic border-l-4 border-zinc-700 pl-6 mb-12">
+            "{role.quote}"
+          </blockquote>
+
+          <!-- Abilities & Description -->
+          <div class="bg-zinc-900/50 border border-zinc-800 rounded-xl p-8 backdrop-blur-sm shadow-xl">
+            <h3 class="text-sm font-bold text-zinc-500 uppercase tracking-widest mb-4 border-b border-zinc-800 pb-2">
+              Role Mechanics
+            </h3>
+            <p class="text-lg text-zinc-300 leading-relaxed">
+              {role.description}
+            </p>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </main>
+</Layout>

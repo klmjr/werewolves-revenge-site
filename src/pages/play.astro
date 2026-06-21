@@ -1,49 +1,158 @@
 ---
 // src/pages/play.astro
 import Layout from '../layouts/Layout.astro';
+
+// Replace this with your actual game hero art
+const heroBg = "https://images.unsplash.com/photo-1505686994434-e3cc5abf1330?q=80&w=2073&auto=format&fit=crop"; 
 ---
 
-<Layout title="How to Play - Werewolves Revenge">
-  <main class="container">
-    <h1>How to Play & Install</h1>
-    <p>Get ready to lie, deceive, and survive. Follow the steps below to install the game.</p>
+<Layout title="Play Werewolves Revenge | Free To Play">
+  <!-- 1. HERO SECTION -->
+  <section class="relative min-h-[90vh] w-full flex flex-col items-center justify-center overflow-hidden bg-black">
+    <div class="absolute inset-0 z-0 opacity-50 scale-105 transform animate-[slowZoom_20s_infinite_alternate]" style={`background-image: url('${heroBg}'); background-size: cover; background-position: center;`}></div>
+    <div class="absolute inset-0 z-0 bg-gradient-to-b from-black/40 via-transparent to-zinc-950"></div>
 
-    <hr />
+    <div class="relative z-10 text-center px-4 flex flex-col items-center mt-20">
+      <div class="flex items-center gap-3 mb-6 bg-zinc-900/80 backdrop-blur-md border border-zinc-700/50 px-4 py-2 rounded-full shadow-lg">
+        <span class="text-emerald-400 font-bold text-sm tracking-wide">VERY POSITIVE (95%)</span>
+        <span class="text-zinc-500 text-xs font-bold uppercase tracking-widest px-2 border-l border-zinc-700">Steam Reviews</span>
+      </div>
+      
+      <h1 class="text-6xl md:text-[8rem] font-black uppercase tracking-tighter text-transparent bg-clip-text bg-gradient-to-b from-zinc-100 to-zinc-500 drop-shadow-2xl leading-none mb-4">
+        Werewolves<br/>
+        <span class="text-red-600 bg-clip-text bg-gradient-to-b from-red-500 to-red-900">Revenge</span>
+      </h1>
+      
+      <p class="text-xl text-zinc-300 max-w-2xl mx-auto mb-10 font-medium drop-shadow-md">
+        An immersive, player-driven social deduction game for 8-16 players.
+      </p>
 
-    <section class="download-section">
-      <h2>1. Download the Game</h2>
-      <a href="https://your-itch-io-or-steam-link.com" class="download-button">
-        Download for Windows (PC)
+      <a href="https://store.steampowered.com/app/1867320/Werewolves_Revenge/" target="_blank" class="group relative inline-flex items-center justify-center px-12 py-5 font-bold text-white uppercase tracking-[0.2em] transition-all duration-300 bg-gradient-to-t from-red-900 to-red-600 hover:from-red-800 hover:to-red-500 border-t border-red-400/30 rounded-sm shadow-[0_0_40px_rgba(220,38,38,0.4)] hover:shadow-[0_0_60px_rgba(220,38,38,0.6)] hover:-translate-y-1 overflow-hidden">
+        <span class="relative z-10 text-2xl">Play For Free</span>
+        <div class="absolute inset-0 -translate-x-full group-hover:animate-[shimmer_1.5s_infinite] bg-gradient-to-r from-transparent via-white/20 to-transparent skew-x-12 z-0"></div>
       </a>
-    </section>
+      
+      <div class="flex gap-6 mt-8 text-zinc-500 text-sm font-semibold uppercase tracking-widest">
+        <span>Online PvP</span>
+        <span>•</span>
+        <span>88 Achievements</span>
+        <span>•</span>
+        <span>Studio Serene</span>
+      </div>
+    </div>
+  </section>
 
-    <section class="steps-section">
-      <h2>2. Installation Guide</h2>
-      <ol>
-        <li>Download the `.zip` file from the link above.</li>
-        <li>Extract the contents to a folder on your computer.</li>
-        <li>Double-click <code>WerewolvesRevenge.exe</code> to launch the game!</li>
-      </ol>
-    </section>
-
-    <section class="rules-summary">
-      <h2>3. Core Rules</h2>
-      <p>
-        The town must work together to deduce who the hidden threats are before night falls, 
-        while the wolves attempt to eliminate the townspeople one by one.
+  <main class="bg-zinc-950 w-full relative z-20 pb-32">
+    
+    <!-- 2. ABOUT THIS GAME -->
+    <section class="max-w-5xl mx-auto px-6 py-24 text-center">
+      <h2 class="text-3xl md:text-5xl font-black text-white uppercase tracking-wider mb-8">Recreate the Magic</h2>
+      <div class="w-16 h-1 bg-red-600 mx-auto mb-10"></div>
+      <p class="text-xl text-zinc-400 leading-relaxed mb-6">
+        Welcome to Werewolves Revenge, an immersive social deduction game that recreates the magic of tabletop classics like Blood on the Clocktower and Werewolf.
+      </p>
+      <p class="text-xl text-zinc-400 leading-relaxed">
+        Werewolves meet in a secret cave each night, allowing them to plot their strategy and murder a player. Once the sun rises, the Town learns of the night's events. Players must then deduce and discuss, ultimately voting to execute a player at the end of each day.
       </p>
     </section>
+
+    <!-- 3. CORE FEATURES GRID -->
+    <section class="max-w-7xl mx-auto px-6 py-12">
+      <div class="grid md:grid-cols-2 gap-6">
+        
+        <!-- Factions & Roles -->
+        <div class="bg-zinc-900 border border-zinc-800 p-10 rounded-xl hover:border-red-900/50 transition-colors">
+          <h3 class="text-2xl font-bold text-red-500 mb-4">300+ Roles & 5 Factions</h3>
+          <p class="text-zinc-400 leading-relaxed mb-4">
+            Every game is filled with action and twists. 5 distinct factions battle for power, each with their own goals and win conditions.
+          </p>
+          <p class="text-zinc-500 text-sm">Over 30 keywords keep interactions simple, intuitive, and easy to learn.</p>
+        </div>
+
+        <!-- Gameplay Mechanics -->
+        <div class="bg-zinc-900 border border-zinc-800 p-10 rounded-xl hover:border-red-900/50 transition-colors">
+          <h3 class="text-2xl font-bold text-red-500 mb-4">Unmatched Immersion</h3>
+          <p class="text-zinc-400 leading-relaxed mb-4">
+            Use Proximity Voice Chat to plot in private, but beware of enemies listening in from the shadows. Use your Personal Notebook to track the truth or forge the perfect alibi to deceive the Town.
+          </p>
+          <p class="text-zinc-500 text-sm">Explore several Maps with unique layouts in both First and Third-person.</p>
+        </div>
+
+        <!-- Customization -->
+        <div class="bg-zinc-900 border border-zinc-800 p-10 rounded-xl hover:border-red-900/50 transition-colors">
+          <h3 class="text-2xl font-bold text-red-500 mb-4">Deep Customization</h3>
+          <p class="text-zinc-400 leading-relaxed mb-4">
+            Express yourself with a deep Character Customization system, allowing for hundreds of items to be mixed and matched. Combine multiple Player Titles to show off your accolades in a unique way.
+          </p>
+        </div>
+
+        <!-- Community -->
+        <div class="bg-zinc-900 border border-zinc-800 p-10 rounded-xl hover:border-red-900/50 transition-colors">
+          <h3 class="text-2xl font-bold text-red-500 mb-4">Community Driven</h3>
+          <p class="text-zinc-400 leading-relaxed mb-4">
+            Werewolves Revenge is a Passion Project that exists because of our incredible and welcoming community. Every game is run by a Host who creates a weird and wonderful experience for all other players.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 4. SYSTEM REQUIREMENTS & TECHNICAL -->
+    <section class="max-w-7xl mx-auto px-6 py-24">
+      <div class="bg-zinc-900/50 border border-zinc-800 p-10 md:p-16 rounded-2xl relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-64 h-64 bg-red-900/10 rounded-full blur-3xl"></div>
+        
+        <h2 class="text-3xl font-black text-white uppercase tracking-wider mb-12 relative z-10">System Requirements</h2>
+        
+        <div class="grid md:grid-cols-2 gap-16 relative z-10">
+          <!-- Minimum -->
+          <div>
+            <h4 class="font-bold text-red-500 tracking-widest uppercase mb-6 border-b border-zinc-800 pb-4">Minimum</h4>
+            <ul class="space-y-4 text-zinc-400">
+              <li class="flex items-start"><span class="w-24 text-zinc-500 font-medium">OS:</span> Windows 7</li>
+              <li class="flex items-start"><span class="w-24 text-zinc-500 font-medium">Processor:</span> i5-3470</li>
+              <li class="flex items-start"><span class="w-24 text-zinc-500 font-medium">Memory:</span> 4 GB RAM</li>
+              <li class="flex items-start"><span class="w-24 text-zinc-500 font-medium">Graphics:</span> GTX 1050</li>
+              <li class="flex items-start"><span class="w-24 text-zinc-500 font-medium">Network:</span> Broadband Internet</li>
+              <li class="flex items-start"><span class="w-24 text-zinc-500 font-medium">Storage:</span> 3 GB available space</li>
+            </ul>
+          </div>
+          
+          <!-- Recommended -->
+          <div>
+            <h4 class="font-bold text-red-500 tracking-widest uppercase mb-6 border-b border-zinc-800 pb-4">Recommended</h4>
+            <ul class="space-y-4 text-zinc-400">
+              <li class="flex items-start"><span class="w-24 text-zinc-500 font-medium">OS:</span> Windows 11</li>
+              <li class="flex items-start"><span class="w-24 text-zinc-500 font-medium">Processor:</span> i5-7700k</li>
+              <li class="flex items-start"><span class="w-24 text-zinc-500 font-medium">Memory:</span> 8 GB RAM</li>
+              <li class="flex items-start"><span class="w-24 text-zinc-500 font-medium">Graphics:</span> GTX 1650</li>
+              <li class="flex items-start"><span class="w-24 text-zinc-500 font-medium">Network:</span> Broadband Internet</li>
+              <li class="flex items-start"><span class="w-24 text-zinc-500 font-medium">Storage:</span> 3 GB available space</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. AI DISCLOSURE FOOTNOTE -->
+    <section class="max-w-4xl mx-auto px-6 pb-12 text-center">
+      <div class="border border-zinc-800 rounded p-6 bg-zinc-900/30">
+        <h5 class="text-zinc-500 uppercase tracking-widest text-xs font-bold mb-2">AI Generated Content Disclosure</h5>
+        <p class="text-zinc-500 text-sm italic">
+          Certain character portraits are using AI art as placeholders.
+        </p>
+      </div>
+    </section>
+
   </main>
 </Layout>
 
-<style>
-  /* Quick temporary styling to make it look decent */
-  .container { max-width: 800px; margin: 0 auto; padding: 2rem; font-family: sans-serif; }
-  .download-button { 
-    display: inline-block; background: #e51b1b; color: white; 
-    padding: 1rem 2rem; text-decoration: none; font-weight: bold; border-radius: 5px; 
-    margin: 1rem 0;
+<style is:global>
+  @keyframes slowZoom {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.05); }
   }
-  .download-button:hover { background: #b31212; }
-  section { margin-bottom: 2.5rem; }
+  @keyframes shimmer {
+    100% { transform: translateX(100%); }
+  }
 </style>
