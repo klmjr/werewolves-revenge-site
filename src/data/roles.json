@@ -1,0 +1,2540 @@
+[
+  {
+    "id": "dark-acolyte",
+    "set": "Dark",
+    "name": "Acolyte",
+    "faction": "LesserEvil",
+    "class": "Investigation",
+    "description": "",
+    "portraitUrl": "/images/roles/T_Acolyte_Portrait.png"
+  },
+  {
+    "id": "dark-alchemist",
+    "set": "Dark",
+    "name": "Alchemist",
+    "faction": "Village",
+    "class": "Elimination",
+    "description": "",
+    "portraitUrl": "/images/roles/T_Alchemist_Portrait.png"
+  },
+  {
+    "id": "dark-alp",
+    "set": "Dark",
+    "name": "Alp",
+    "faction": "Vampire",
+    "class": "Elimination",
+    "description": "",
+    "portraitUrl": "/images/roles/T_Alp_Portrait.png"
+  },
+  {
+    "id": "standard-alpha-wolf",
+    "set": "Standard",
+    "name": "Alpha Wolf",
+    "faction": "Werewolf",
+    "class": "Manipulation",
+    "description": "Do not fear the dark, little lamb. Let me show you how to rule it.",
+    "portraitUrl": "/images/roles/T_AlphaWolf_P.png"
+  },
+  {
+    "id": "starter-alpha-wolf",
+    "set": "Starter",
+    "name": "Alpha Wolf",
+    "faction": "Werewolf",
+    "class": "Manipulation",
+    "description": "Do not fear the dark, little lamb. Let me show you how to rule it.",
+    "portraitUrl": "/images/roles/T_AlphaWolf_P.png"
+  },
+  {
+    "id": "dark-amnesiac",
+    "set": "Dark",
+    "name": "Amnesiac",
+    "faction": "Village",
+    "class": "Manipulation",
+    "description": "",
+    "portraitUrl": "/images/roles/T_Amnesiac_Portrait.png"
+  },
+  {
+    "id": "dark-angel",
+    "set": "Dark",
+    "name": "Angel",
+    "faction": "Neutral",
+    "class": "Elimination",
+    "description": "",
+    "portraitUrl": "/images/roles/T_Angel_P.png"
+  },
+  {
+    "id": "dark-apothecary",
+    "set": "Dark",
+    "name": "Apothecary",
+    "faction": "Village",
+    "class": "Protection",
+    "description": "",
+    "portraitUrl": "/images/roles/T_Apothecary_Portrait.png"
+  },
+  {
+    "id": "standard-arcane-mage",
+    "set": "Standard",
+    "name": "Arcane Mage",
+    "faction": "Town",
+    "class": "Manipulation",
+    "description": "Shut down important targets by turning them into sheep or obliterating them.",
+    "portraitUrl": "/images/roles/T_MagusPortrait.png"
+  },
+  {
+    "id": "dark-architect",
+    "set": "Dark",
+    "name": "Architect",
+    "faction": "Village",
+    "class": "Investigation",
+    "description": "",
+    "portraitUrl": "/images/roles/T_Architect_Portrait.png"
+  },
+  {
+    "id": "standard-arsonist",
+    "set": "Standard",
+    "name": "Arsonist",
+    "faction": "Evil",
+    "class": "Elimination",
+    "description": "Set the town ablaze and watch it burn.",
+    "portraitUrl": "/images/roles/T_Arsonist_P.png"
+  },
+  {
+    "id": "dark-assassin",
+    "set": "Dark",
+    "name": "Assassin",
+    "faction": "Vampire",
+    "class": "Elimination",
+    "description": "",
+    "portraitUrl": "/images/roles/T_Assassin_Portrait.png"
+  },
+  {
+    "id": "standard-assassin",
+    "set": "Standard",
+    "name": "Assassin",
+    "faction": "LesserEvil",
+    "class": "Elimination",
+    "description": "Eliminate key targets whilst staying out of sight.",
+    "portraitUrl": "/images/roles/T_AssassinPortrait.png"
+  },
+  {
+    "id": "standard-assumer",
+    "set": "Standard",
+    "name": "Assumer",
+    "faction": "Werewolf",
+    "class": "Manipulation",
+    "description": "Assume the role of a player.",
+    "portraitUrl": "/images/roles/T_WerewolfAssumerPortrait.png"
+  },
+  {
+    "id": "dark-astrologer",
+    "set": "Dark",
+    "name": "Astrologer",
+    "faction": "Village",
+    "class": "Investigation",
+    "description": "",
+    "portraitUrl": "/images/roles/T_Astrologer_P.png"
+  },
+  {
+    "id": "standard-baby-dragon",
+    "set": "Standard",
+    "name": "Baby Dragon",
+    "faction": "LesserEvil",
+    "class": "Manipulation",
+    "description": "Grow up to become a Dragon of your choice.",
+    "portraitUrl": "/images/roles/T_BabyDragonPortrait.png"
+  },
+  {
+    "id": "dark-banshee",
+    "set": "Dark",
+    "name": "Banshee",
+    "faction": "LesserEvil",
+    "class": "Manipulation",
+    "description": "A wailing spirit of despair, your screams do not kill, but shatter focus and weaken the living.",
+    "portraitUrl": "/images/roles/T_Banshee_Portrait.png"
+  },
+  {
+    "id": "standard-bard",
+    "set": "Standard",
+    "name": "Bard",
+    "faction": "Town",
+    "class": "Manipulation",
+    "description": "Serenade other players, enhancing their abilities.",
+    "portraitUrl": "/images/roles/T_BardPortrait.png"
+  },
+  {
+    "id": "dark-beast",
+    "set": "Dark",
+    "name": "Beast",
+    "faction": "Vampire",
+    "class": "Elimination",
+    "description": "",
+    "portraitUrl": "/images/roles/T_Beast_Portrait.png"
+  },
+  {
+    "id": "dark-bell-ringer",
+    "set": "Dark",
+    "name": "Bell Ringer",
+    "faction": "Village",
+    "class": "Manipulation",
+    "description": "Armed with nothing but a giant church bell and questionable hearing, ward off evil spirits.",
+    "portraitUrl": "/images/roles/T_BellRinger_Portrait.png"
+  },
+  {
+    "id": "dark-blighted",
+    "set": "Dark",
+    "name": "Blighted",
+    "faction": "Evil",
+    "class": "Elimination",
+    "description": "",
+    "portraitUrl": "/images/roles/T_Blighted_Portrait.png"
+  },
+  {
+    "id": "standard-blood-fiend",
+    "set": "Standard",
+    "name": "Blood Fiend",
+    "faction": "Evil",
+    "class": "Elimination",
+    "description": "Hunt and bleed out the Town.",
+    "portraitUrl": "/images/roles/T_BloodFiendPortrait.png"
+  },
+  {
+    "id": "standard-blood-mage",
+    "set": "Standard",
+    "name": "Blood Mage",
+    "faction": "Evil",
+    "class": "Elimination",
+    "description": "Drain the blood of the Town until it's dry.",
+    "portraitUrl": "/images/roles/T_BloodMagePortrait.png"
+  },
+  {
+    "id": "starter-blood-mage",
+    "set": "Starter",
+    "name": "Blood Mage",
+    "faction": "Evil",
+    "class": "Elimination",
+    "description": "Drain the blood of the Town until it's dry.",
+    "portraitUrl": "/images/roles/T_BloodMagePortrait.png"
+  },
+  {
+    "id": "standard-bodyguard",
+    "set": "Standard",
+    "name": "Bodyguard",
+    "faction": "Town",
+    "class": "Protection",
+    "description": "Protect the town from the horrors of the night.",
+    "portraitUrl": "/images/roles/T_BodyguardPortrait.png"
+  },
+  {
+    "id": "starter-bodyguard",
+    "set": "Starter",
+    "name": "Bodyguard",
+    "faction": "Town",
+    "class": "Protection",
+    "description": "Protect the town from the horrors of the night.",
+    "portraitUrl": "/images/roles/T_BodyguardPortrait.png"
+  },
+  {
+    "id": "dark-bounty-hunter",
+    "set": "Dark",
+    "name": "Bounty Hunter",
+    "faction": "Neutral",
+    "class": "Manipulation",
+    "description": "",
+    "portraitUrl": "/images/roles/T_BountyHunter_Portrait.png"
+  },
+  {
+    "id": "standard-brawler",
+    "set": "Standard",
+    "name": "Brawler",
+    "faction": "Werewolf",
+    "class": "Elimination",
+    "description": "Strike players with a bleeding attack.",
+    "portraitUrl": "/images/roles/T_WerewolfBrawlerPortrait.png"
+  },
+  {
+    "id": "starter-brawler",
+    "set": "Starter",
+    "name": "Brawler",
+    "faction": "Werewolf",
+    "class": "Elimination",
+    "description": "Strike players with a bleeding attack.",
+    "portraitUrl": "/images/roles/T_WerewolfBrawlerPortrait.png"
+  },
+  {
+    "id": "dark-butcher",
+    "set": "Dark",
+    "name": "Butcher",
+    "faction": "Village",
+    "class": "Elimination",
+    "description": "",
+    "portraitUrl": "/images/roles/T_Butcher_Portrait.png"
+  },
+  {
+    "id": "dark-candlemaker",
+    "set": "Dark",
+    "name": "CandleMaker",
+    "faction": "Village",
+    "class": "Manipulation",
+    "description": "",
+    "portraitUrl": "/images/roles/T_CandleMaker_Portrait.png"
+  },
+  {
+    "id": "standard-cannibal",
+    "set": "Standard",
+    "name": "Cannibal",
+    "faction": "Evil",
+    "class": "Elimination",
+    "description": "He used to feed the village. Now, the village feeds him.",
+    "portraitUrl": "/images/roles/T_CannibalPortrait.png"
+  },
+  {
+    "id": "standard-chronomancer",
+    "set": "Standard",
+    "name": "Chronomancer",
+    "faction": "Town",
+    "class": "Manipulation",
+    "description": "Manipulate time to protect or kill.",
+    "portraitUrl": "/images/roles/T_Chronomancer_Portrait.png"
+  },
+  {
+    "id": "standard-chupacabra",
+    "set": "Standard",
+    "name": "Chupacabra",
+    "faction": "Evil",
+    "class": "Elimination",
+    "description": "Hunt the Werewolves to eliminate the competition, then feast on the town.",
+    "portraitUrl": "/images/roles/T_ChupacabraPortrait.png"
+  },
+  {
+    "id": "starter-chupacabra",
+    "set": "Starter",
+    "name": "Chupacabra",
+    "faction": "Evil",
+    "class": "Elimination",
+    "description": "Hunt the Werewolves to eliminate the competition, then feast on the town.",
+    "portraitUrl": "/images/roles/T_ChupacabraPortrait.png"
+  },
+  {
+    "id": "standard-clairvoyant",
+    "set": "Standard",
+    "name": "Clairvoyant",
+    "faction": "Town",
+    "class": "Investigation",
+    "description": "Learn information about the players targeting a player.",
+    "portraitUrl": "/images/roles/T_Clairvoyant_Portrait.png"
+  },
+  {
+    "id": "starter-clairvoyant",
+    "set": "Starter",
+    "name": "Clairvoyant",
+    "faction": "Town",
+    "class": "Investigation",
+    "description": "Learn information about the players targeting a player.",
+    "portraitUrl": "/images/roles/T_Clairvoyant_Portrait.png"
+  },
+  {
+    "id": "dark-cleric",
+    "set": "Dark",
+    "name": "Cleric",
+    "faction": "Village",
+    "class": "Protection",
+    "description": "",
+    "portraitUrl": "/images/roles/T_Cleric_Portrait.png"
+  },
+  {
+    "id": "dark-condemned",
+    "set": "Dark",
+    "name": "Condemned",
+    "faction": "LesserEvil",
+    "class": "Elimination",
+    "description": "Condemned for being able to conjure fire from air, you seek revenge on Town.",
+    "portraitUrl": "/images/roles/T_Condemned_P.png"
+  },
+  {
+    "id": "dark-coroner",
+    "set": "Dark",
+    "name": "Coroner",
+    "faction": "Village",
+    "class": "Investigation",
+    "description": "",
+    "portraitUrl": "/images/roles/T_Coroner_P.png"
+  },
+  {
+    "id": "standard-corrupt-noble",
+    "set": "Standard",
+    "name": "Corrupt Noble",
+    "faction": "LesserEvil",
+    "class": "Manipulation",
+    "description": "Meet with the closest evil player each night.",
+    "portraitUrl": "/images/roles/T_CorruptNoblePortrait.png"
+  },
+  {
+    "id": "starter-corrupt-noble",
+    "set": "Starter",
+    "name": "Corrupt Noble",
+    "faction": "LesserEvil",
+    "class": "Manipulation",
+    "description": "Meet with the closest evil player each night.",
+    "portraitUrl": "/images/roles/T_CorruptNoblePortrait.png"
+  },
+  {
+    "id": "standard-council-elder",
+    "set": "Standard",
+    "name": "Council Elder",
+    "faction": "Neutral",
+    "class": "Manipulation",
+    "description": "Induct players into a council.",
+    "portraitUrl": "/images/roles/T_CouncilElderPortrait.png"
+  },
+  {
+    "id": "standard-courier",
+    "set": "Standard",
+    "name": "Courier",
+    "faction": "Town",
+    "class": "Manipulation",
+    "description": "Disrupt abilities by moving them around.",
+    "portraitUrl": "/images/roles/T_CourierPortrait.png"
+  },
+  {
+    "id": "standard-cow",
+    "set": "Standard",
+    "name": "Cow",
+    "faction": "Neutral",
+    "class": "Elimination",
+    "description": "Your only ambition in life is to die.",
+    "portraitUrl": "/images/roles/T_CowPortrait.png"
+  },
+  {
+    "id": "starter-cow",
+    "set": "Starter",
+    "name": "Cow",
+    "faction": "Neutral",
+    "class": "Elimination",
+    "description": "Your only ambition in life is to die.",
+    "portraitUrl": "/images/roles/T_CowPortrait.png"
+  },
+  {
+    "id": "standard-creep",
+    "set": "Standard",
+    "name": "Creep",
+    "faction": "LesserEvil",
+    "class": "Investigation",
+    "description": "Get to know your neighbours.. verrrry well..",
+    "portraitUrl": "/images/roles/T_Creep_Portrait.png"
+  },
+  {
+    "id": "starter-creep",
+    "set": "Starter",
+    "name": "Creep",
+    "faction": "LesserEvil",
+    "class": "Investigation",
+    "description": "Get to know your neighbours.. verrrry well..",
+    "portraitUrl": "/images/roles/T_Creep_Portrait.png"
+  },
+  {
+    "id": "standard-cthulhu",
+    "set": "Standard",
+    "name": "Cthulhu",
+    "faction": "Neutral",
+    "class": "Manipulation",
+    "description": "Control the minds of players to cause chaos.",
+    "portraitUrl": "/images/roles/T_CthulhuPortrait.png"
+  },
+  {
+    "id": "starter-cthulhu",
+    "set": "Starter",
+    "name": "Cthulhu",
+    "faction": "Neutral",
+    "class": "Manipulation",
+    "description": "Control the minds of players to cause chaos.",
+    "portraitUrl": "/images/roles/T_CthulhuPortrait.png"
+  },
+  {
+    "id": "standard-cult-leader",
+    "set": "Standard",
+    "name": "Cult Leader",
+    "faction": "Evil",
+    "class": "Manipulation",
+    "description": "Lead a secret cult to slowly take over the Town. ",
+    "portraitUrl": "/images/roles/T_CultLeaderPortrait.png"
+  },
+  {
+    "id": "standard-cupid",
+    "set": "Standard",
+    "name": "Cupid",
+    "faction": "LesserEvil",
+    "class": "Manipulation",
+    "description": "Love is in the air!",
+    "portraitUrl": "/images/roles/T_Cupid_Portrait.png"
+  },
+  {
+    "id": "starter-cupid",
+    "set": "Starter",
+    "name": "Cupid",
+    "faction": "LesserEvil",
+    "class": "Manipulation",
+    "description": "Love is in the air!",
+    "portraitUrl": "/images/roles/T_Cupid_Portrait.png"
+  },
+  {
+    "id": "dark-damsel",
+    "set": "Dark",
+    "name": "Damsel",
+    "faction": "Village",
+    "class": "Investigation",
+    "description": "",
+    "portraitUrl": "/images/roles/T_Damsel_Portrait.png"
+  },
+  {
+    "id": "standard-dark-seer",
+    "set": "Standard",
+    "name": "Dark Seer",
+    "faction": "LesserEvil",
+    "class": "Investigation",
+    "description": "Learn player's roles.",
+    "portraitUrl": "/images/roles/T_DarkSeerPortrait.png"
+  },
+  {
+    "id": "starter-dark-seer",
+    "set": "Starter",
+    "name": "Dark Seer",
+    "faction": "LesserEvil",
+    "class": "Investigation",
+    "description": "Learn player's roles.",
+    "portraitUrl": "/images/roles/T_DarkSeerPortrait.png"
+  },
+  {
+    "id": "dark-dark-twin",
+    "set": "Dark",
+    "name": "Dark Twin",
+    "faction": "Evil",
+    "class": "Manipulation",
+    "description": "",
+    "portraitUrl": "/images/roles/T_DarkTwin_Portrait.png"
+  },
+  {
+    "id": "standard-death",
+    "set": "Standard",
+    "name": "Death",
+    "faction": "Evil",
+    "class": "Elimination",
+    "description": "Harvest the souls of the living.",
+    "portraitUrl": "/images/roles/T_Death_Portrait.png"
+  },
+  {
+    "id": "dark-defeated",
+    "set": "Dark",
+    "name": "Defeated",
+    "faction": "Neutral",
+    "class": "Manipulation",
+    "description": "",
+    "portraitUrl": "/images/roles/T_Defeated_Portrait.png"
+  },
+  {
+    "id": "dark-demon",
+    "set": "Dark",
+    "name": "Demon",
+    "faction": "Evil",
+    "class": "Elimination",
+    "description": "",
+    "portraitUrl": "/images/roles/T_Demon_Portrait.png"
+  },
+  {
+    "id": "standard-den-mother",
+    "set": "Standard",
+    "name": "Den Mother",
+    "faction": "Werewolf",
+    "class": "Protection",
+    "description": "Protect your pups at all costs.",
+    "portraitUrl": "/images/roles/T_DenMother_Portrait.png"
+  },
+  {
+    "id": "starter-den-mother",
+    "set": "Starter",
+    "name": "Den Mother",
+    "faction": "Werewolf",
+    "class": "Protection",
+    "description": "Protect your pups at all costs.",
+    "portraitUrl": "/images/roles/T_DenMother_Portrait.png"
+  },
+  {
+    "id": "dark-dhampyr",
+    "set": "Dark",
+    "name": "Dhampyr",
+    "faction": "Vampire",
+    "class": "Investigation",
+    "description": "",
+    "portraitUrl": "/images/roles/T_Dhampyr_Portrait.png"
+  },
+  {
+    "id": "dark-doomsayer",
+    "set": "Dark",
+    "name": "Doomsayer",
+    "faction": "Evil",
+    "class": "Manipulation",
+    "description": "",
+    "portraitUrl": "/images/roles/T_Doomsayer_Portrait.png"
+  },
+  {
+    "id": "standard-dracula",
+    "set": "Standard",
+    "name": "Dracula",
+    "faction": "Evil",
+    "class": "Elimination",
+    "description": "Turn the town against itself.",
+    "portraitUrl": "/images/roles/T_DraculaPortrait.png"
+  },
+  {
+    "id": "starter-dracula",
+    "set": "Starter",
+    "name": "Dracula",
+    "faction": "Evil",
+    "class": "Elimination",
+    "description": "Turn the town against itself.",
+    "portraitUrl": "/images/roles/T_DraculaPortrait.png"
+  },
+  {
+    "id": "standard-dragon-knight",
+    "set": "Standard",
+    "name": "Dragon Knight",
+    "faction": "Town",
+    "class": "Protection",
+    "description": "Protect those who are worthy, and burn those who aren't.",
+    "portraitUrl": "/images/roles/T_DragonKnightPortrait.png"
+  },
+  {
+    "id": "starter-dragon-knight",
+    "set": "Starter",
+    "name": "Dragon Knight",
+    "faction": "Town",
+    "class": "Protection",
+    "description": "Protect those who are worthy, and burn those who aren't.",
+    "portraitUrl": "/images/roles/T_DragonKnightPortrait.png"
+  },
+  {
+    "id": "standard-druid",
+    "set": "Standard",
+    "name": "Druid",
+    "faction": "Town",
+    "class": "Protection",
+    "description": "Use the powers of nature to protect the town from harm.",
+    "portraitUrl": "/images/roles/T_DruidPortrait.png"
+  },
+  {
+    "id": "starter-druid",
+    "set": "Starter",
+    "name": "Druid",
+    "faction": "Town",
+    "class": "Protection",
+    "description": "Use the powers of nature to protect the town from harm.",
+    "portraitUrl": "/images/roles/T_DruidPortrait.png"
+  },
+  {
+    "id": "standard-dusk-wolf",
+    "set": "Standard",
+    "name": "Dusk Wolf",
+    "faction": "Werewolf",
+    "class": "Manipulation",
+    "description": "Force the start of the next night by revealing your role.",
+    "portraitUrl": "/images/roles/T_DuskWolf_Portrait.png"
+  },
+  {
+    "id": "starter-dusk-wolf",
+    "set": "Starter",
+    "name": "Dusk Wolf",
+    "faction": "Werewolf",
+    "class": "Manipulation",
+    "description": "Force the start of the next night by revealing your role.",
+    "portraitUrl": "/images/roles/T_DuskWolf_Portrait.png"
+  },
+  {
+    "id": "standard-elder-dragon",
+    "set": "Standard",
+    "name": "Elder Dragon",
+    "faction": "Evil",
+    "class": "Elimination",
+    "description": "",
+    "portraitUrl": "/images/roles/T_ElderDragon_P.png"
+  },
+  {
+    "id": "dark-embalmer",
+    "set": "Dark",
+    "name": "Embalmer",
+    "faction": "Evil",
+    "class": "Elimination",
+    "description": "",
+    "portraitUrl": "/images/roles/T_Embalmer_Portrait.png"
+  },
+  {
+    "id": "standard-ember-archer",
+    "set": "Standard",
+    "name": "Ember Archer",
+    "faction": "Town",
+    "class": "Elimination",
+    "description": "Unleash a volley of flaming arrows upon your enemies.",
+    "portraitUrl": "/images/roles/T_EmberArcherPortrait.png"
+  },
+  {
+    "id": "starter-ember-archer",
+    "set": "Starter",
+    "name": "Ember Archer",
+    "faction": "Town",
+    "class": "Elimination",
+    "description": "Unleash a volley of flaming arrows upon your enemies.",
+    "portraitUrl": "/images/roles/T_EmberArcherPortrait.png"
+  },
+  {
+    "id": "standard-ember-wolf",
+    "set": "Standard",
+    "name": "Ember Wolf",
+    "faction": "Werewolf",
+    "class": "Elimination",
+    "description": "Engulf the Town in flames.",
+    "portraitUrl": "/images/roles/T_EmberWolf_Portrait.png"
+  },
+  {
+    "id": "starter-ember-wolf",
+    "set": "Starter",
+    "name": "Ember Wolf",
+    "faction": "Werewolf",
+    "class": "Elimination",
+    "description": "Engulf the Town in flames.",
+    "portraitUrl": "/images/roles/T_EmberWolf_Portrait.png"
+  },
+  {
+    "id": "dark-empath",
+    "set": "Dark",
+    "name": "Empath",
+    "faction": "Village",
+    "class": "Protection",
+    "description": "",
+    "portraitUrl": "/images/roles/T_Empath_Portrait.png"
+  },
+  {
+    "id": "dark-exorcist",
+    "set": "Dark",
+    "name": "Exorcist",
+    "faction": "Village",
+    "class": "Elimination",
+    "description": "",
+    "portraitUrl": "/images/roles/T_Exorcist_Portrait.png"
+  },
+  {
+    "id": "standard-faceless",
+    "set": "Standard",
+    "name": "Faceless",
+    "faction": "Neutral",
+    "class": "Manipulation",
+    "description": "Copy the role of another player, but share their fate.",
+    "portraitUrl": "/images/roles/T_FacelessPortrait.png"
+  },
+  {
+    "id": "starter-faceless",
+    "set": "Starter",
+    "name": "Faceless",
+    "faction": "Neutral",
+    "class": "Manipulation",
+    "description": "Copy the role of another player, but share their fate.",
+    "portraitUrl": "/images/roles/T_FacelessPortrait.png"
+  },
+  {
+    "id": "standard-fallen-angel",
+    "set": "Standard",
+    "name": "Fallen Angel",
+    "faction": "LesserEvil",
+    "class": "Manipulation",
+    "description": "Make the Town vulnerable to attacks.",
+    "portraitUrl": "/images/roles/T_FallenAngel_Portrait.png"
+  },
+  {
+    "id": "standard-fallen-star",
+    "set": "Standard",
+    "name": "Fallen Star",
+    "faction": "Evil",
+    "class": "Protection",
+    "description": "Manipulate time to protect or kill.",
+    "portraitUrl": "/images/roles/T_FallenStar_Portrait.png"
+  },
+  {
+    "id": "standard-fanatic",
+    "set": "Standard",
+    "name": "Fanatic",
+    "faction": "Town",
+    "class": "Protection",
+    "description": "Keep the town safe as long as they don't vote to eliminate you.",
+    "portraitUrl": "/images/roles/T_FanaticPortrait.png"
+  },
+  {
+    "id": "standard-farmer",
+    "set": "Standard",
+    "name": "Farmer",
+    "faction": "Town",
+    "class": "Manipulation",
+    "description": "Your death will cause the town to starve.",
+    "portraitUrl": "/images/roles/T_FarmerPortrait.png"
+  },
+  {
+    "id": "starter-farmer",
+    "set": "Starter",
+    "name": "Farmer",
+    "faction": "Town",
+    "class": "Manipulation",
+    "description": "Your death will cause the town to starve.",
+    "portraitUrl": "/images/roles/T_FarmerPortrait.png"
+  },
+  {
+    "id": "standard-fire-dragon",
+    "set": "Standard",
+    "name": "Fire Dragon",
+    "faction": "Evil",
+    "class": "Elimination",
+    "description": "Unleash an ancient rage in the form a fury of flames.",
+    "portraitUrl": "/images/roles/T_DragonPortrait.png"
+  },
+  {
+    "id": "starter-fire-dragon",
+    "set": "Starter",
+    "name": "Fire Dragon",
+    "faction": "Evil",
+    "class": "Elimination",
+    "description": "Unleash an ancient rage in the form a fury of flames.",
+    "portraitUrl": "/images/roles/T_DragonPortrait.png"
+  },
+  {
+    "id": "standard-fire-mage",
+    "set": "Standard",
+    "name": "Fire Mage",
+    "faction": "Town",
+    "class": "Elimination",
+    "description": "Use fire magic to eliminate key targets.",
+    "portraitUrl": "/images/roles/T_FireMagePortrait.png"
+  },
+  {
+    "id": "starter-fire-mage",
+    "set": "Starter",
+    "name": "Fire Mage",
+    "faction": "Town",
+    "class": "Elimination",
+    "description": "Use fire magic to eliminate key targets.",
+    "portraitUrl": "/images/roles/T_FireMagePortrait.png"
+  },
+  {
+    "id": "dark-fisherman",
+    "set": "Dark",
+    "name": "Fisherman",
+    "faction": "Village",
+    "class": "Manipulation",
+    "description": "",
+    "portraitUrl": "/images/roles/T_Fisherman_Portrait.png"
+  },
+  {
+    "id": "dark-flame-keeper",
+    "set": "Dark",
+    "name": "Flame Keeper",
+    "faction": "Village",
+    "class": "Elimination",
+    "description": "",
+    "portraitUrl": "/images/roles/T_Keeper_Portrait.png"
+  },
+  {
+    "id": "dark-fledgling",
+    "set": "Dark",
+    "name": "Fledgling",
+    "faction": "Vampire",
+    "class": "Manipulation",
+    "description": "",
+    "portraitUrl": "/images/roles/T_Fledgling_Portrait.png"
+  },
+  {
+    "id": "dark-fortune-teller",
+    "set": "Dark",
+    "name": "Fortune Teller",
+    "faction": "Village",
+    "class": "Protection",
+    "description": "",
+    "portraitUrl": "/images/roles/T_FortuneTeller_Portrait.png"
+  },
+  {
+    "id": "dark-freak",
+    "set": "Dark",
+    "name": "Freak",
+    "faction": "Village",
+    "class": "Protection",
+    "description": "",
+    "portraitUrl": "/images/roles/T_Freak_Portrait.png"
+  },
+  {
+    "id": "standard-frost-drake",
+    "set": "Standard",
+    "name": "Frost Drake",
+    "faction": "Evil",
+    "class": "Investigation",
+    "description": "Indirectly lay waste to the town.",
+    "portraitUrl": "/images/roles/T_FrostDrake_Portrait.png"
+  },
+  {
+    "id": "standard-frost-mage",
+    "set": "Standard",
+    "name": "Frost Mage",
+    "faction": "Town",
+    "class": "Protection",
+    "description": "Use frost magic to protect key targets.",
+    "portraitUrl": "/images/roles/T_FrostMagePortrait.png"
+  },
+  {
+    "id": "standard-frost-wolf",
+    "set": "Standard",
+    "name": "Frost Wolf",
+    "faction": "Werewolf",
+    "class": "Manipulation",
+    "description": "The cold will be the only victor in the end.",
+    "portraitUrl": "/images/roles/T_FrostWolfPortrait.png"
+  },
+  {
+    "id": "dark-gambler",
+    "set": "Dark",
+    "name": "Gambler",
+    "faction": "Neutral",
+    "class": "Elimination",
+    "description": "",
+    "portraitUrl": "/images/roles/T_Gambler_Portrait.png"
+  },
+  {
+    "id": "dark-gargoyle",
+    "set": "Dark",
+    "name": "Gargoyle",
+    "faction": "Vampire",
+    "class": "Protection",
+    "description": "",
+    "portraitUrl": "/images/roles/T_Gargoyle_Portrait.png"
+  },
+  {
+    "id": "dark-ghoul",
+    "set": "Dark",
+    "name": "Ghoul",
+    "faction": "Evil",
+    "class": "Elimination",
+    "description": "",
+    "portraitUrl": "/images/roles/T_Ghoul_Portrait.png"
+  },
+  {
+    "id": "dark-goat",
+    "set": "Dark",
+    "name": "Goat",
+    "faction": "LesserEvil",
+    "class": "Investigation",
+    "description": "",
+    "portraitUrl": "/images/roles/T_Goat_Portrait.png"
+  },
+  {
+    "id": "standard-grave-digger",
+    "set": "Standard",
+    "name": "Grave Digger",
+    "faction": "Neutral",
+    "class": "Manipulation",
+    "description": "Dig up the dead to assume their role.",
+    "portraitUrl": "/images/roles/T_GraveDigger_Portrait.png"
+  },
+  {
+    "id": "starter-grave-digger",
+    "set": "Starter",
+    "name": "Grave Digger",
+    "faction": "Neutral",
+    "class": "Manipulation",
+    "description": "Dig up the dead to assume their role.",
+    "portraitUrl": "/images/roles/T_GraveDigger_Portrait.png"
+  },
+  {
+    "id": "dark-grave-robber",
+    "set": "Dark",
+    "name": "Grave Robber",
+    "faction": "Village",
+    "class": "Investigation",
+    "description": "",
+    "portraitUrl": "/images/roles/T_GraveRobber_P.png"
+  },
+  {
+    "id": "standard-greenhorn",
+    "set": "Standard",
+    "name": "Greenhorn",
+    "faction": "Town",
+    "class": "Elimination",
+    "description": "Sacrifice yourself to save another.",
+    "portraitUrl": "/images/roles/T_GreenhornPortrait.png"
+  },
+  {
+    "id": "starter-greenhorn",
+    "set": "Starter",
+    "name": "Greenhorn",
+    "faction": "Town",
+    "class": "Elimination",
+    "description": "Sacrifice yourself to save another.",
+    "portraitUrl": "/images/roles/T_GreenhornPortrait.png"
+  },
+  {
+    "id": "standard-guard-dog",
+    "set": "Standard",
+    "name": "Guard Dog",
+    "faction": "Town",
+    "class": "Protection",
+    "description": "The best boi, Dexter.",
+    "portraitUrl": "/images/roles/T_GuardDog_P.png"
+  },
+  {
+    "id": "standard-guardian-angel",
+    "set": "Standard",
+    "name": "Guardian Angel",
+    "faction": "Neutral",
+    "class": "Protection",
+    "description": "Vow to protect two players at all cost.",
+    "portraitUrl": "/images/roles/T_GuardianAngelPortrait.png"
+  },
+  {
+    "id": "starter-guardian-angel",
+    "set": "Starter",
+    "name": "Guardian Angel",
+    "faction": "Neutral",
+    "class": "Protection",
+    "description": "Vow to protect two players at all cost.",
+    "portraitUrl": "/images/roles/T_GuardianAngelPortrait.png"
+  },
+  {
+    "id": "dark-hag",
+    "set": "Dark",
+    "name": "Hag",
+    "faction": "LesserEvil",
+    "class": "Elimination",
+    "description": "",
+    "portraitUrl": "/images/roles/T_HagPortrait.png"
+  },
+  {
+    "id": "standard-harlot",
+    "set": "Standard",
+    "name": "Harlot",
+    "faction": "Town",
+    "class": "Manipulation",
+    "description": "Use lust to leave other players exposed and weak.",
+    "portraitUrl": "/images/roles/T_Harlot_Portrait.png"
+  },
+  {
+    "id": "starter-harlot",
+    "set": "Starter",
+    "name": "Harlot",
+    "faction": "Town",
+    "class": "Manipulation",
+    "description": "Use lust to leave other players exposed and weak.",
+    "portraitUrl": "/images/roles/T_Harlot_Portrait.png"
+  },
+  {
+    "id": "standard-healer",
+    "set": "Standard",
+    "name": "Healer",
+    "faction": "Town",
+    "class": "Protection",
+    "description": "Heal the ailments of other players.",
+    "portraitUrl": "/images/roles/T_Healer_Portrait.png"
+  },
+  {
+    "id": "starter-healer",
+    "set": "Starter",
+    "name": "Healer",
+    "faction": "Town",
+    "class": "Protection",
+    "description": "Heal the ailments of other players.",
+    "portraitUrl": "/images/roles/T_Healer_Portrait.png"
+  },
+  {
+    "id": "dark-herb-vendor",
+    "set": "Dark",
+    "name": "Herb Vendor",
+    "faction": "Village",
+    "class": "Manipulation",
+    "description": "",
+    "portraitUrl": "/images/roles/T_HerbVendor_Portrait.png"
+  },
+  {
+    "id": "standard-herbalist",
+    "set": "Standard",
+    "name": "Herbalist",
+    "faction": "Town",
+    "class": "Protection",
+    "description": "Use fire magic to eliminate key targets.",
+    "portraitUrl": "/images/roles/T_Herbalist_Portrait.png"
+  },
+  {
+    "id": "starter-herbalist",
+    "set": "Starter",
+    "name": "Herbalist",
+    "faction": "Town",
+    "class": "Protection",
+    "description": "Use fire magic to eliminate key targets.",
+    "portraitUrl": "/images/roles/T_Herbalist_Portrait.png"
+  },
+  {
+    "id": "dark-heretic",
+    "set": "Dark",
+    "name": "Heretic",
+    "faction": "Village",
+    "class": "Elimination",
+    "description": "",
+    "portraitUrl": "/images/roles/T_Heretic_Portrait.png"
+  },
+  {
+    "id": "standard-horror",
+    "set": "Standard",
+    "name": "Horror",
+    "faction": "Werewolf",
+    "class": "Manipulation",
+    "description": "Scare important protections off of players by making them untargetable.",
+    "portraitUrl": "/images/roles/T_WerewolfHorrorPortrait.png"
+  },
+  {
+    "id": "dark-hunter",
+    "set": "Dark",
+    "name": "Hunter",
+    "faction": "Village",
+    "class": "Elimination",
+    "description": "",
+    "portraitUrl": "/images/roles/T_Hunter_Portrait.png"
+  },
+  {
+    "id": "standard-impersonator",
+    "set": "Standard",
+    "name": "Impersonator",
+    "faction": "LesserEvil",
+    "class": "Manipulation",
+    "description": "Copy the roles of other players. ",
+    "portraitUrl": "/images/roles/T_ImpersonatorPortrait.png"
+  },
+  {
+    "id": "dark-information-broker",
+    "set": "Dark",
+    "name": "Information Broker",
+    "faction": "Neutral",
+    "class": "Manipulation",
+    "description": "",
+    "portraitUrl": "/images/roles/T_InformationBrokerPortrait.png"
+  },
+  {
+    "id": "standard-inquisitor",
+    "set": "Standard",
+    "name": "Inquisitor",
+    "faction": "Town",
+    "class": "Investigation",
+    "description": "Obtain large amounts of information about players that is mostly accurate.",
+    "portraitUrl": "/images/roles/T_InquisitorPortrait.png"
+  },
+  {
+    "id": "starter-inquisitor",
+    "set": "Starter",
+    "name": "Inquisitor",
+    "faction": "Town",
+    "class": "Investigation",
+    "description": "Obtain large amounts of information about players that is mostly accurate.",
+    "portraitUrl": "/images/roles/T_InquisitorPortrait.png"
+  },
+  {
+    "id": "standard-jackal",
+    "set": "Standard",
+    "name": "Jackal",
+    "faction": "Werewolf",
+    "class": "Protection",
+    "description": "Disrupt the town by calling the gods to protect you.",
+    "portraitUrl": "/images/roles/T_JackalPortrait.png"
+  },
+  {
+    "id": "starter-jackal",
+    "set": "Starter",
+    "name": "Jackal",
+    "faction": "Werewolf",
+    "class": "Protection",
+    "description": "Disrupt the town by calling the gods to protect you.",
+    "portraitUrl": "/images/roles/T_JackalPortrait.png"
+  },
+  {
+    "id": "standard-jailer",
+    "set": "Standard",
+    "name": "Jailer",
+    "faction": "Town",
+    "class": "Elimination",
+    "description": "Interrogate players at night.",
+    "portraitUrl": "/images/roles/T_JailerPortrait.png"
+  },
+  {
+    "id": "starter-jailer",
+    "set": "Starter",
+    "name": "Jailer",
+    "faction": "Town",
+    "class": "Elimination",
+    "description": "Interrogate players at night.",
+    "portraitUrl": "/images/roles/T_JailerPortrait.png"
+  },
+  {
+    "id": "standard-janitor",
+    "set": "Standard",
+    "name": "Janitor",
+    "faction": "LesserEvil",
+    "class": "Manipulation",
+    "description": "Learn information about players whilst making them untargetable to other players.",
+    "portraitUrl": "/images/roles/T_JanitorPortrait.png"
+  },
+  {
+    "id": "dark-jester",
+    "set": "Dark",
+    "name": "Jester",
+    "faction": "LesserEvil",
+    "class": "Protection",
+    "description": "",
+    "portraitUrl": "/images/roles/T_Jester_Portrait.png"
+  },
+  {
+    "id": "standard-judge",
+    "set": "Standard",
+    "name": "Judge",
+    "faction": "Neutral",
+    "class": "Elimination",
+    "description": "Have the final say in all execution votes during the day.",
+    "portraitUrl": "/images/roles/T_Judge_Portrait.png"
+  },
+  {
+    "id": "starter-judge",
+    "set": "Starter",
+    "name": "Judge",
+    "faction": "Neutral",
+    "class": "Elimination",
+    "description": "Have the final say in all execution votes during the day.",
+    "portraitUrl": "/images/roles/T_Judge_Portrait.png"
+  },
+  {
+    "id": "standard-juggernaut",
+    "set": "Standard",
+    "name": "Juggernaut",
+    "faction": "Town",
+    "class": "Elimination",
+    "description": "Wreck havoc in the Town.",
+    "portraitUrl": "/images/roles/T_JuggernautPortrait.png"
+  },
+  {
+    "id": "standard-justice",
+    "set": "Standard",
+    "name": "Justice",
+    "faction": "Town",
+    "class": "Elimination",
+    "description": "Take justice into your own hands when the jusice system fails.",
+    "portraitUrl": "/images/roles/T_JusticePortrait.png"
+  },
+  {
+    "id": "starter-justice",
+    "set": "Starter",
+    "name": "Justice",
+    "faction": "Town",
+    "class": "Elimination",
+    "description": "Take justice into your own hands when the jusice system fails.",
+    "portraitUrl": "/images/roles/T_JusticePortrait.png"
+  },
+  {
+    "id": "standard-king",
+    "set": "Standard",
+    "name": "King",
+    "faction": "Town",
+    "class": "Manipulation",
+    "description": "Prove that you are better than the Mad King.",
+    "portraitUrl": "/images/roles/T_KingPortrait.png"
+  },
+  {
+    "id": "starter-king",
+    "set": "Starter",
+    "name": "King",
+    "faction": "Town",
+    "class": "Manipulation",
+    "description": "Prove that you are better than the Mad King.",
+    "portraitUrl": "/images/roles/T_KingPortrait.png"
+  },
+  {
+    "id": "dark-knight",
+    "set": "Dark",
+    "name": "Knight",
+    "faction": "Village",
+    "class": "Elimination",
+    "description": "",
+    "portraitUrl": "/images/roles/T_Knight_Portrait.png"
+  },
+  {
+    "id": "dark-life-drinker",
+    "set": "Dark",
+    "name": "Life Drinker",
+    "faction": "Vampire",
+    "class": "Elimination",
+    "description": "",
+    "portraitUrl": "/images/roles/T_LifeDrinker_Portrait.png"
+  },
+  {
+    "id": "standard-locksmith",
+    "set": "Standard",
+    "name": "Locksmith",
+    "faction": "Town",
+    "class": "Manipulation",
+    "description": "Keep people safe by locking them inside of their houses.",
+    "portraitUrl": "/images/roles/T_Locksmith_Portrait.png"
+  },
+  {
+    "id": "dark-loner",
+    "set": "Dark",
+    "name": "Loner",
+    "faction": "Village",
+    "class": "Manipulation",
+    "description": "",
+    "portraitUrl": "/images/roles/T_Loner_Portrait.png"
+  },
+  {
+    "id": "standard-mad-bomber",
+    "set": "Standard",
+    "name": "Mad Bomber",
+    "faction": "Town",
+    "class": "Elimination",
+    "description": "Move a bomb between players. On death, trigger it.",
+    "portraitUrl": "/images/roles/T_MadBomberPortrait.png"
+  },
+  {
+    "id": "starter-mad-bomber",
+    "set": "Starter",
+    "name": "Mad Bomber",
+    "faction": "Town",
+    "class": "Elimination",
+    "description": "Move a bomb between players. On death, trigger it.",
+    "portraitUrl": "/images/roles/T_MadBomberPortrait.png"
+  },
+  {
+    "id": "dark-mad-king",
+    "set": "Dark",
+    "name": "Mad King",
+    "faction": "Neutral",
+    "class": "Elimination",
+    "description": "",
+    "portraitUrl": "/images/roles/T_MadKing_Portrait.png"
+  },
+  {
+    "id": "standard-magistrate",
+    "set": "Standard",
+    "name": "Magistrate",
+    "faction": "LesserEvil",
+    "class": "Manipulation",
+    "description": "Control the narative by influencing votes.",
+    "portraitUrl": "/images/roles/T_MagistratePortrait.png"
+  },
+  {
+    "id": "dark-martyr",
+    "set": "Dark",
+    "name": "Martyr",
+    "faction": "Vampire",
+    "class": "Manipulation",
+    "description": "",
+    "portraitUrl": "/images/roles/T_Martyr_Portrait.png"
+  },
+  {
+    "id": "dark-masochist",
+    "set": "Dark",
+    "name": "Masochist",
+    "faction": "Neutral",
+    "class": "Manipulation",
+    "description": "",
+    "portraitUrl": "/images/roles/T_Masochist_Portrait.png"
+  },
+  {
+    "id": "dark-mastermind",
+    "set": "Dark",
+    "name": "Mastermind",
+    "faction": "LesserEvil",
+    "class": "Protection",
+    "description": "",
+    "portraitUrl": "/images/roles/T_Mastermind_Portrait.png"
+  },
+  {
+    "id": "standard-medium",
+    "set": "Standard",
+    "name": "Medium",
+    "faction": "Town",
+    "class": "Investigation",
+    "description": "Be the voice of dead players.",
+    "portraitUrl": "/images/roles/T_MediumPortrait.png"
+  },
+  {
+    "id": "starter-medium",
+    "set": "Starter",
+    "name": "Medium",
+    "faction": "Town",
+    "class": "Investigation",
+    "description": "Be the voice of dead players.",
+    "portraitUrl": "/images/roles/T_MediumPortrait.png"
+  },
+  {
+    "id": "standard-mentalist",
+    "set": "Standard",
+    "name": "Mentalist",
+    "faction": "Town",
+    "class": "Investigation",
+    "description": "Find similarities between players.",
+    "portraitUrl": "/images/roles/T_MentalistPortrait.png"
+  },
+  {
+    "id": "starter-mentalist",
+    "set": "Starter",
+    "name": "Mentalist",
+    "faction": "Town",
+    "class": "Investigation",
+    "description": "Find similarities between players.",
+    "portraitUrl": "/images/roles/T_MentalistPortrait.png"
+  },
+  {
+    "id": "dark-mimic",
+    "set": "Dark",
+    "name": "Mimic",
+    "faction": "LesserEvil",
+    "class": "Manipulation",
+    "description": "",
+    "portraitUrl": "/images/roles/T_Mimic_Portrait.png"
+  },
+  {
+    "id": "dark-mind-eater",
+    "set": "Dark",
+    "name": "Mind Eater",
+    "faction": "Vampire",
+    "class": "Investigation",
+    "description": "",
+    "portraitUrl": "/images/roles/T_MindEater_Portrait.png"
+  },
+  {
+    "id": "dark-minion",
+    "set": "Dark",
+    "name": "Minion",
+    "faction": "LesserEvil",
+    "class": "Investigation",
+    "description": "",
+    "portraitUrl": "/images/roles/T_Minion_Portrait.png"
+  },
+  {
+    "id": "standard-mirror-fiend",
+    "set": "Standard",
+    "name": "Mirror Fiend",
+    "faction": "Neutral",
+    "class": "Manipulation",
+    "description": "Reach through the mirror to steal someone's identity. ",
+    "portraitUrl": "/images/roles/T_MirrorfiendPortrait.png"
+  },
+  {
+    "id": "dark-mortician",
+    "set": "Dark",
+    "name": "Mortician",
+    "faction": "Village",
+    "class": "Investigation",
+    "description": "",
+    "portraitUrl": "/images/roles/T_Mortician_P.png"
+  },
+  {
+    "id": "dark-mutator",
+    "set": "Dark",
+    "name": "Mutator",
+    "faction": "Vampire",
+    "class": "Manipulation",
+    "description": "",
+    "portraitUrl": "/images/roles/T_Mutator_Portrait.png"
+  },
+  {
+    "id": "dark-necromancer",
+    "set": "Dark",
+    "name": "Necromancer",
+    "faction": "Evil",
+    "class": "Manipulation",
+    "description": "",
+    "portraitUrl": "/images/roles/T_Necromancer_Portrait.png"
+  },
+  {
+    "id": "standard-night-owl",
+    "set": "Standard",
+    "name": "Night Owl",
+    "faction": "Town",
+    "class": "Investigation",
+    "description": "Sleep is for the weak.",
+    "portraitUrl": "/images/roles/T_NightOwl_Portrait.png"
+  },
+  {
+    "id": "dark-night's-watch",
+    "set": "Dark",
+    "name": "Night's Watch",
+    "faction": "Village",
+    "class": "Investigation",
+    "description": "",
+    "portraitUrl": "/images/roles/T_NightsWatch_Portrait.png"
+  },
+  {
+    "id": "standard-nymph",
+    "set": "Standard",
+    "name": "Nymph",
+    "faction": "Town",
+    "class": "Protection",
+    "description": "Keep the peace so that nature can be safe.",
+    "portraitUrl": "/images/roles/T_Nymph__P.png"
+  },
+  {
+    "id": "standard-old-man",
+    "set": "Standard",
+    "name": "Old Man",
+    "faction": "Town",
+    "class": "Elimination",
+    "description": "Role play as Dylan for a bit.",
+    "portraitUrl": "/images/roles/T_OldMan_Portrait.png"
+  },
+  {
+    "id": "starter-old-man",
+    "set": "Starter",
+    "name": "Old Man",
+    "faction": "Town",
+    "class": "Elimination",
+    "description": "Role play as Dylan for a bit.",
+    "portraitUrl": "/images/roles/T_OldMan_Portrait.png"
+  },
+  {
+    "id": "dark-outsider",
+    "set": "Dark",
+    "name": "Outsider",
+    "faction": "Neutral",
+    "class": "Manipulation",
+    "description": "",
+    "portraitUrl": "/images/roles/T_Outsider_Portrait.png"
+  },
+  {
+    "id": "standard-pack-wolf",
+    "set": "Standard",
+    "name": "Pack Wolf",
+    "faction": "Werewolf",
+    "class": "Elimination",
+    "description": "Strike at the Town with your claws.",
+    "portraitUrl": "/images/roles/T_PackWolf_P.png"
+  },
+  {
+    "id": "starter-pack-wolf",
+    "set": "Starter",
+    "name": "Pack Wolf",
+    "faction": "Werewolf",
+    "class": "Elimination",
+    "description": "Strike at the Town with your claws.",
+    "portraitUrl": "/images/roles/T_PackWolf_P.png"
+  },
+  {
+    "id": "dark-paladin",
+    "set": "Dark",
+    "name": "Paladin",
+    "faction": "Village",
+    "class": "Protection",
+    "description": "",
+    "portraitUrl": "/images/roles/T_Paladin_Portrait.png"
+  },
+  {
+    "id": "standard-pants-wolf",
+    "set": "Standard",
+    "name": "Pants Wolf",
+    "faction": "Werewolf",
+    "class": "Manipulation",
+    "description": "Leave players more exposed than they were planning for.",
+    "portraitUrl": "/images/roles/T_PantsuWolfPortrait.png"
+  },
+  {
+    "id": "starter-pants-wolf",
+    "set": "Starter",
+    "name": "Pants Wolf",
+    "faction": "Werewolf",
+    "class": "Manipulation",
+    "description": "Leave players more exposed than they were planning for.",
+    "portraitUrl": "/images/roles/T_PantsuWolfPortrait.png"
+  },
+  {
+    "id": "dark-parasite",
+    "set": "Dark",
+    "name": "Parasite",
+    "faction": "Evil",
+    "class": "Elimination",
+    "description": "",
+    "portraitUrl": "/images/roles/T_Parasite_Portrait.png"
+  },
+  {
+    "id": "dark-parishioner",
+    "set": "Dark",
+    "name": "Parishioner",
+    "faction": "Village",
+    "class": "Protection",
+    "description": "",
+    "portraitUrl": "/images/roles/T_Parishioner_Portrait.png"
+  },
+  {
+    "id": "standard-party-animal",
+    "set": "Standard",
+    "name": "Party Animal",
+    "faction": "Town",
+    "class": "Manipulation",
+    "description": "Protect players by inviting them around for a party!",
+    "portraitUrl": "/images/roles/T_PartyAnimalPortrait.png"
+  },
+  {
+    "id": "standard-peasant",
+    "set": "Standard",
+    "name": "Peasant",
+    "faction": "Town",
+    "class": "Elimination",
+    "description": "Sometimes a well placed spear can change history.",
+    "portraitUrl": "/images/roles/T_Peasant_Portrait.png"
+  },
+  {
+    "id": "starter-peasant",
+    "set": "Starter",
+    "name": "Peasant",
+    "faction": "Town",
+    "class": "Elimination",
+    "description": "Sometimes a well placed spear can change history.",
+    "portraitUrl": "/images/roles/T_Peasant_Portrait.png"
+  },
+  {
+    "id": "standard-plague-doctor",
+    "set": "Standard",
+    "name": "Plague Doctor",
+    "faction": "Evil",
+    "class": "Elimination",
+    "description": "Spread plague to wipe out the Town.",
+    "portraitUrl": "/images/roles/T_PlagueDoctorPortrait.png"
+  },
+  {
+    "id": "standard-poison-drake",
+    "set": "Standard",
+    "name": "Poison Drake",
+    "faction": "Evil",
+    "class": "Manipulation",
+    "description": "Spread plague to wipe out the Town.",
+    "portraitUrl": "/images/roles/T_Poison_Drake_Portrait.png"
+  },
+  {
+    "id": "dark-preacher",
+    "set": "Dark",
+    "name": "Preacher",
+    "faction": "Village",
+    "class": "Manipulation",
+    "description": "",
+    "portraitUrl": "/images/roles/T_Preacher_Portrait.png"
+  },
+  {
+    "id": "standard-priest",
+    "set": "Standard",
+    "name": "Priest",
+    "faction": "Town",
+    "class": "Protection",
+    "description": "Protect the righteous and eliminate wolves with holy water. ",
+    "portraitUrl": "/images/roles/T_PriestPortrait.png"
+  },
+  {
+    "id": "starter-priest",
+    "set": "Starter",
+    "name": "Priest",
+    "faction": "Town",
+    "class": "Protection",
+    "description": "Protect the righteous and eliminate wolves with holy water. ",
+    "portraitUrl": "/images/roles/T_PriestPortrait.png"
+  },
+  {
+    "id": "dark-prince",
+    "set": "Dark",
+    "name": "Prince",
+    "faction": "Village",
+    "class": "Protection",
+    "description": "",
+    "portraitUrl": "/images/roles/T_Prince_Portrait.png"
+  },
+  {
+    "id": "standard-princess",
+    "set": "Standard",
+    "name": "Princess",
+    "faction": "Town",
+    "class": "Elimination",
+    "description": "Overturn a vote by revealing yourself.",
+    "portraitUrl": "/images/roles/T_PrincessPortrait.png"
+  },
+  {
+    "id": "dark-prophet",
+    "set": "Dark",
+    "name": "Prophet",
+    "faction": "Village",
+    "class": "Investigation",
+    "description": "",
+    "portraitUrl": "/images/roles/T_Prophet_Portrait.png"
+  },
+  {
+    "id": "standard-prophet",
+    "set": "Standard",
+    "name": "Prophet",
+    "faction": "Town",
+    "class": "Investigation",
+    "description": "Use prophecies to decern information about your neighbours.",
+    "portraitUrl": "/images/roles/T_ProphetPortrait.png"
+  },
+  {
+    "id": "starter-prophet",
+    "set": "Starter",
+    "name": "Prophet",
+    "faction": "Town",
+    "class": "Investigation",
+    "description": "Use prophecies to decern information about your neighbours.",
+    "portraitUrl": "/images/roles/T_ProphetPortrait.png"
+  },
+  {
+    "id": "dark-psychic",
+    "set": "Dark",
+    "name": "Psychic",
+    "faction": "Village",
+    "class": "Investigation",
+    "description": "",
+    "portraitUrl": "/images/roles/T_Psychic_Portrait.png"
+  },
+  {
+    "id": "standard-psychopath",
+    "set": "Standard",
+    "name": "Psychopath",
+    "faction": "Neutral",
+    "class": "Elimination",
+    "description": "Take revenge on players who dare to visit your obession.",
+    "portraitUrl": "/images/roles/T_PsycopathPortrait.png"
+  },
+  {
+    "id": "standard-queen",
+    "set": "Standard",
+    "name": "Queen",
+    "faction": "Town",
+    "class": "Manipulation",
+    "description": "Use poison and politics to outnumber the irrelevant.",
+    "portraitUrl": "/images/roles/T_QueenPortrait.png"
+  },
+  {
+    "id": "dark-rat",
+    "set": "Dark",
+    "name": "Rat",
+    "faction": "Evil",
+    "class": "Elimination",
+    "description": "",
+    "portraitUrl": "/images/roles/T_Rat_Portrait.png"
+  },
+  {
+    "id": "dark-raven-keeper",
+    "set": "Dark",
+    "name": "Raven Keeper",
+    "faction": "LesserEvil",
+    "class": "Investigation",
+    "description": "",
+    "portraitUrl": "/images/roles/T_RavenKeeper_Portrait.png"
+  },
+  {
+    "id": "standard-ringmaster",
+    "set": "Standard",
+    "name": "Ringmaster",
+    "faction": "Neutral",
+    "class": "Elimination",
+    "description": "Force players to roll dice for their lives.",
+    "portraitUrl": "/images/roles/T_RingmasterPortrait.png"
+  },
+  {
+    "id": "starter-ringmaster",
+    "set": "Starter",
+    "name": "Ringmaster",
+    "faction": "Neutral",
+    "class": "Elimination",
+    "description": "Force players to roll dice for their lives.",
+    "portraitUrl": "/images/roles/T_RingmasterPortrait.png"
+  },
+  {
+    "id": "standard-royal-guard",
+    "set": "Standard",
+    "name": "Royal Guard",
+    "faction": "Town",
+    "class": "Protection",
+    "description": "Be the first and last line of defense between the Royals and the horrors of the night.",
+    "portraitUrl": "/images/roles/T_RoyalGuardPortrait.png"
+  },
+  {
+    "id": "starter-royal-guard",
+    "set": "Starter",
+    "name": "Royal Guard",
+    "faction": "Town",
+    "class": "Protection",
+    "description": "Be the first and last line of defense between the Royals and the horrors of the night.",
+    "portraitUrl": "/images/roles/T_RoyalGuardPortrait.png"
+  },
+  {
+    "id": "standard-royal-knight",
+    "set": "Standard",
+    "name": "Royal Knight",
+    "faction": "Town",
+    "class": "Elimination",
+    "description": "Protect the town from the horrors of the night.",
+    "portraitUrl": "/images/roles/T_RoyalKnightPortrait.png"
+  },
+  {
+    "id": "starter-royal-knight",
+    "set": "Starter",
+    "name": "Royal Knight",
+    "faction": "Town",
+    "class": "Elimination",
+    "description": "Protect the town from the horrors of the night.",
+    "portraitUrl": "/images/roles/T_RoyalKnightPortrait.png"
+  },
+  {
+    "id": "dark-saboteur",
+    "set": "Dark",
+    "name": "Saboteur",
+    "faction": "LesserEvil",
+    "class": "Manipulation",
+    "description": "",
+    "portraitUrl": "/images/roles/T_Saboteur_Portrait.png"
+  },
+  {
+    "id": "dark-saint",
+    "set": "Dark",
+    "name": "Saint",
+    "faction": "Village",
+    "class": "Manipulation",
+    "description": "",
+    "portraitUrl": "/images/roles/T_Saint_Portrait.png"
+  },
+  {
+    "id": "dark-sanguine",
+    "set": "Dark",
+    "name": "Sanguine",
+    "faction": "Vampire",
+    "class": "Investigation",
+    "description": "",
+    "portraitUrl": "/images/roles/T_Sanguine_Portrait.png"
+  },
+  {
+    "id": "dark-scout",
+    "set": "Dark",
+    "name": "Scout",
+    "faction": "Village",
+    "class": "Investigation",
+    "description": "",
+    "portraitUrl": "/images/roles/T_Scout_Portrait.png"
+  },
+  {
+    "id": "dark-scribe",
+    "set": "Dark",
+    "name": "Scribe",
+    "faction": "Village",
+    "class": "Investigation",
+    "description": "",
+    "portraitUrl": "/images/roles/T_Scribe_Portrait.png"
+  },
+  {
+    "id": "standard-scryer",
+    "set": "Standard",
+    "name": "Scryer",
+    "faction": "Town",
+    "class": "Investigation",
+    "description": "Read the negative energy of players, discerning who can kill. ",
+    "portraitUrl": "/images/roles/T_ScryerPortrait.png"
+  },
+  {
+    "id": "starter-scryer",
+    "set": "Starter",
+    "name": "Scryer",
+    "faction": "Town",
+    "class": "Investigation",
+    "description": "Read the negative energy of players, discerning who can kill. ",
+    "portraitUrl": "/images/roles/T_ScryerPortrait.png"
+  },
+  {
+    "id": "standard-sectator",
+    "set": "Standard",
+    "name": "Sectator",
+    "faction": "Werewolf",
+    "class": "Manipulation",
+    "description": "Convert Town into Werewolves if your numbers are too low. ",
+    "portraitUrl": "/images/roles/T_SectatorPortrait.png"
+  },
+  {
+    "id": "standard-seer",
+    "set": "Standard",
+    "name": "Seer",
+    "faction": "Town",
+    "class": "Investigation",
+    "description": "Use your crystal ball to discern who can be trusted.",
+    "portraitUrl": "/images/roles/T_SeerPortrait.png"
+  },
+  {
+    "id": "starter-seer",
+    "set": "Starter",
+    "name": "Seer",
+    "faction": "Town",
+    "class": "Investigation",
+    "description": "Use your crystal ball to discern who can be trusted.",
+    "portraitUrl": "/images/roles/T_SeerPortrait.png"
+  },
+  {
+    "id": "standard-serial-killer",
+    "set": "Standard",
+    "name": "Serial Killer",
+    "faction": "Evil",
+    "class": "Elimination",
+    "description": "Kill players if you can predict where they will be at night.",
+    "portraitUrl": "/images/roles/T_SerialKillerPortrait.png"
+  },
+  {
+    "id": "dark-serpent",
+    "set": "Dark",
+    "name": "Serpent",
+    "faction": "Evil",
+    "class": "Elimination",
+    "description": "",
+    "portraitUrl": "/images/roles/T_Serpant_Portrait.png"
+  },
+  {
+    "id": "dark-servant",
+    "set": "Dark",
+    "name": "Servant",
+    "faction": "Village",
+    "class": "Manipulation",
+    "description": "",
+    "portraitUrl": "/images/roles/T_Servant_Portrait.png"
+  },
+  {
+    "id": "dark-shade",
+    "set": "Dark",
+    "name": "Shade",
+    "faction": "LesserEvil",
+    "class": "Manipulation",
+    "description": "",
+    "portraitUrl": "/images/roles/T_Shade_Portrait.png"
+  },
+  {
+    "id": "standard-sheep",
+    "set": "Standard",
+    "name": "Sheep",
+    "faction": "Neutral",
+    "class": "Protection",
+    "description": "You are a sheep.",
+    "portraitUrl": "/images/roles/T_SheepPortrait.png"
+  },
+  {
+    "id": "starter-sheep",
+    "set": "Starter",
+    "name": "Sheep",
+    "faction": "Neutral",
+    "class": "Protection",
+    "description": "You are a sheep.",
+    "portraitUrl": "/images/roles/T_SheepPortrait.png"
+  },
+  {
+    "id": "standard-shield-maiden",
+    "set": "Standard",
+    "name": "Shield Maiden",
+    "faction": "Town",
+    "class": "Protection",
+    "description": "Protect large groups of players by placing yourself in front of them.",
+    "portraitUrl": "/images/roles/T_ShieldMaidenPortrait.png"
+  },
+  {
+    "id": "starter-shield-maiden",
+    "set": "Starter",
+    "name": "Shield Maiden",
+    "faction": "Town",
+    "class": "Protection",
+    "description": "Protect large groups of players by placing yourself in front of them.",
+    "portraitUrl": "/images/roles/T_ShieldMaidenPortrait.png"
+  },
+  {
+    "id": "standard-shrouder",
+    "set": "Standard",
+    "name": "Shrouder",
+    "faction": "Werewolf",
+    "class": "Elimination",
+    "description": "Enter an enraged state on death, killing someone before you perish.",
+    "portraitUrl": "/images/roles/T_ShrouderPortrait.png"
+  },
+  {
+    "id": "starter-shrouder",
+    "set": "Starter",
+    "name": "Shrouder",
+    "faction": "Werewolf",
+    "class": "Elimination",
+    "description": "Enter an enraged state on death, killing someone before you perish.",
+    "portraitUrl": "/images/roles/T_ShrouderPortrait.png"
+  },
+  {
+    "id": "dark-siren",
+    "set": "Dark",
+    "name": "Siren",
+    "faction": "Vampire",
+    "class": "Investigation",
+    "description": "",
+    "portraitUrl": "/images/roles/T_Siren_Portrait.png"
+  },
+  {
+    "id": "standard-skeletal-wolf",
+    "set": "Standard",
+    "name": "Skeletal Wolf",
+    "faction": "Werewolf",
+    "class": "Manipulation",
+    "description": "Cause other players to crumble to dust.",
+    "portraitUrl": "/images/roles/T_Skeletal_Wolf_Portrait.png"
+  },
+  {
+    "id": "dark-skeleton-archer",
+    "set": "Dark",
+    "name": "Skeleton Archer",
+    "faction": "Evil",
+    "class": "Elimination",
+    "description": "",
+    "portraitUrl": "/images/roles/T_SkeletonArcher_Portrait.png"
+  },
+  {
+    "id": "dark-skeleton-mage",
+    "set": "Dark",
+    "name": "Skeleton Mage",
+    "faction": "Evil",
+    "class": "Elimination",
+    "description": "",
+    "portraitUrl": "/images/roles/T_SkeletonMage_Portrait.png"
+  },
+  {
+    "id": "dark-skeleton-warrior",
+    "set": "Dark",
+    "name": "Skeleton Warrior",
+    "faction": "Evil",
+    "class": "Protection",
+    "description": "",
+    "portraitUrl": "/images/roles/T_SkeletonWarrior_Portrait.png"
+  },
+  {
+    "id": "dark-sleep-walker",
+    "set": "Dark",
+    "name": "Sleep Walker",
+    "faction": "Village",
+    "class": "Investigation",
+    "description": "",
+    "portraitUrl": "/images/roles/T_SleepWalker_Portrait.png"
+  },
+  {
+    "id": "dark-sniper",
+    "set": "Dark",
+    "name": "Sniper",
+    "faction": "Village",
+    "class": "Elimination",
+    "description": "",
+    "portraitUrl": "/images/roles/T_Sniper_P.png"
+  },
+  {
+    "id": "standard-soothesayer",
+    "set": "Standard",
+    "name": "Soothesayer",
+    "faction": "Town",
+    "class": "Protection",
+    "description": "Cast a soothing aura to save players from death.",
+    "portraitUrl": "/images/roles/T_SoothesayerPortrait.png"
+  },
+  {
+    "id": "standard-sorceress",
+    "set": "Standard",
+    "name": "Sorceress",
+    "faction": "Town",
+    "class": "Elimination",
+    "description": "Use magic to eliminate and protect.",
+    "portraitUrl": "/images/roles/T_SorceressPortrait.png"
+  },
+  {
+    "id": "starter-sorceress",
+    "set": "Starter",
+    "name": "Sorceress",
+    "faction": "Town",
+    "class": "Elimination",
+    "description": "Use magic to eliminate and protect.",
+    "portraitUrl": "/images/roles/T_SorceressPortrait.png"
+  },
+  {
+    "id": "dark-soul-binder",
+    "set": "Dark",
+    "name": "Soul Binder",
+    "faction": "LesserEvil",
+    "class": "Manipulation",
+    "description": "",
+    "portraitUrl": "/images/roles/T_SoulSeeker_Portrait.png"
+  },
+  {
+    "id": "standard-squire",
+    "set": "Standard",
+    "name": "Squire",
+    "faction": "Town",
+    "class": "Manipulation",
+    "description": "Assume the role of a another Townsfolk.",
+    "portraitUrl": "/images/roles/T_Squire_Portrait.png"
+  },
+  {
+    "id": "starter-squire",
+    "set": "Starter",
+    "name": "Squire",
+    "faction": "Town",
+    "class": "Manipulation",
+    "description": "Assume the role of a another Townsfolk.",
+    "portraitUrl": "/images/roles/T_Squire_Portrait.png"
+  },
+  {
+    "id": "dark-stalker",
+    "set": "Dark",
+    "name": "Stalker",
+    "faction": "Vampire",
+    "class": "Elimination",
+    "description": "",
+    "portraitUrl": "/images/roles/T_Stalker_Portrait.png"
+  },
+  {
+    "id": "standard-starving-wolf",
+    "set": "Standard",
+    "name": "Starving Wolf",
+    "faction": "Werewolf",
+    "class": "Manipulation",
+    "description": "Limit the Werwolves options.",
+    "portraitUrl": "/images/roles/T_StarvingWolfPortrait.png"
+  },
+  {
+    "id": "standard-stone-golem",
+    "set": "Standard",
+    "name": "Stone Golem",
+    "faction": "Town",
+    "class": "Manipulation",
+    "description": "Redirect attacks to your strong self.",
+    "portraitUrl": "/images/roles/T_StoneGolem_Portrait.png"
+  },
+  {
+    "id": "dark-stone-mason",
+    "set": "Dark",
+    "name": "Stone Mason",
+    "faction": "Village",
+    "class": "Protection",
+    "description": "",
+    "portraitUrl": "/images/roles/T_Artisan_Portrait.png"
+  },
+  {
+    "id": "dark-strigoi",
+    "set": "Dark",
+    "name": "Strigoi",
+    "faction": "Vampire",
+    "class": "Manipulation",
+    "description": "",
+    "portraitUrl": "/images/roles/T_Strigoi_Portrait.png"
+  },
+  {
+    "id": "dark-succubus",
+    "set": "Dark",
+    "name": "Succubus",
+    "faction": "Vampire",
+    "class": "Elimination",
+    "description": "",
+    "portraitUrl": "/images/roles/T_Succubus_Portrait.png"
+  },
+  {
+    "id": "dark-tailor",
+    "set": "Dark",
+    "name": "Tailor",
+    "faction": "Village",
+    "class": "Manipulation",
+    "description": "",
+    "portraitUrl": "/images/roles/T_Tailor_Portrait.png"
+  },
+  {
+    "id": "dark-tavern-keeper",
+    "set": "Dark",
+    "name": "Tavern Keeper",
+    "faction": "Neutral",
+    "class": "Manipulation",
+    "description": "",
+    "portraitUrl": "/images/roles/T_TavernKeeper_Portrait.png"
+  },
+  {
+    "id": "standard-the-blob",
+    "set": "Standard",
+    "name": "The Blob",
+    "faction": "Evil",
+    "class": "Protection",
+    "description": "Gives very enthusiastic hugs.",
+    "portraitUrl": "/images/roles/T_TheBlob_P.png"
+  },
+  {
+    "id": "dark-thief",
+    "set": "Dark",
+    "name": "Thief",
+    "faction": "Village",
+    "class": "Manipulation",
+    "description": "",
+    "portraitUrl": "/images/roles/T_Thief_P.png"
+  },
+  {
+    "id": "standard-tormentor",
+    "set": "Standard",
+    "name": "Tormentor",
+    "faction": "LesserEvil",
+    "class": "Manipulation",
+    "description": "Torment players, causing havoc in the Town.",
+    "portraitUrl": "/images/roles/T_TormentedPortrait.png"
+  },
+  {
+    "id": "dark-town-crier",
+    "set": "Dark",
+    "name": "Town Crier",
+    "faction": "Village",
+    "class": "Investigation",
+    "description": "",
+    "portraitUrl": "/images/roles/T_TownCrier_Portrait.png"
+  },
+  {
+    "id": "standard-tracker",
+    "set": "Standard",
+    "name": "Tracker",
+    "faction": "Town",
+    "class": "Investigation",
+    "description": "Do you wish to allow cookies?",
+    "portraitUrl": "/images/roles/T_TrackerPortrait.png"
+  },
+  {
+    "id": "starter-tracker",
+    "set": "Starter",
+    "name": "Tracker",
+    "faction": "Town",
+    "class": "Investigation",
+    "description": "Do you wish to allow cookies?",
+    "portraitUrl": "/images/roles/T_TrackerPortrait.png"
+  },
+  {
+    "id": "dark-trapper",
+    "set": "Dark",
+    "name": "Trapper",
+    "faction": "Village",
+    "class": "Elimination",
+    "description": "",
+    "portraitUrl": "/images/roles/T_Trapper_Portrait.png"
+  },
+  {
+    "id": "standard-traveler",
+    "set": "Standard",
+    "name": "Traveler",
+    "faction": "Town",
+    "class": "Investigation",
+    "description": "Travel to players houses learning what they are capable of.",
+    "portraitUrl": "/images/roles/T_TravelerPortrait.png"
+  },
+  {
+    "id": "starter-traveler",
+    "set": "Starter",
+    "name": "Traveler",
+    "faction": "Town",
+    "class": "Investigation",
+    "description": "Travel to players houses learning what they are capable of.",
+    "portraitUrl": "/images/roles/T_TravelerPortrait.png"
+  },
+  {
+    "id": "standard-treant",
+    "set": "Standard",
+    "name": "Treant",
+    "faction": "Town",
+    "class": "Manipulation",
+    "description": "Contain danger as an ancient protector of the forest.",
+    "portraitUrl": "/images/roles/T_Treant_Portrait.png"
+  },
+  {
+    "id": "standard-tree",
+    "set": "Standard",
+    "name": "Tree",
+    "faction": "Neutral",
+    "class": "Protection",
+    "description": "Provide oxygen for the town.",
+    "portraitUrl": "/images/roles/T_TreePortrait.png"
+  },
+  {
+    "id": "starter-tree",
+    "set": "Starter",
+    "name": "Tree",
+    "faction": "Neutral",
+    "class": "Protection",
+    "description": "Provide oxygen for the town.",
+    "portraitUrl": "/images/roles/T_TreePortrait.png"
+  },
+  {
+    "id": "dark-undertaker",
+    "set": "Dark",
+    "name": "Undertaker",
+    "faction": "Neutral",
+    "class": "Investigation",
+    "description": "",
+    "portraitUrl": "/images/roles/T_Undertaker_P.png"
+  },
+  {
+    "id": "dark-vampire-hunter",
+    "set": "Dark",
+    "name": "Vampire Hunter",
+    "faction": "Village",
+    "class": "Elimination",
+    "description": "",
+    "portraitUrl": "/images/roles/T_VampireHunter_Portrait.png"
+  },
+  {
+    "id": "standard-vigilante",
+    "set": "Standard",
+    "name": "Vigilante",
+    "faction": "Town",
+    "class": "Elimination",
+    "description": "Strike someone with an unstoppable attack by revealing yourself.",
+    "portraitUrl": "/images/roles/T_VigilantePortrait.png"
+  },
+  {
+    "id": "starter-vigilante",
+    "set": "Starter",
+    "name": "Vigilante",
+    "faction": "Town",
+    "class": "Elimination",
+    "description": "Strike someone with an unstoppable attack by revealing yourself.",
+    "portraitUrl": "/images/roles/T_VigilantePortrait.png"
+  },
+  {
+    "id": "dark-visionary",
+    "set": "Dark",
+    "name": "Visionary",
+    "faction": "Village",
+    "class": "Elimination",
+    "description": "",
+    "portraitUrl": "/images/roles/T_Visionary_Portrait.png"
+  },
+  {
+    "id": "dark-vourdalak",
+    "set": "Dark",
+    "name": "Vourdalak",
+    "faction": "Evil",
+    "class": "Elimination",
+    "description": "",
+    "portraitUrl": "/images/roles/T_Vourdalak_Portrait.png"
+  },
+  {
+    "id": "standard-warden",
+    "set": "Standard",
+    "name": "Warden",
+    "faction": "LesserEvil",
+    "class": "Protection",
+    "description": "Weird smash but okay",
+    "portraitUrl": "/images/roles/T_Warden_P.png"
+  },
+  {
+    "id": "dark-warlock",
+    "set": "Dark",
+    "name": "Warlock",
+    "faction": "Village",
+    "class": "Manipulation",
+    "description": "",
+    "portraitUrl": "/images/roles/T_Warlock_Portrait.png"
+  },
+  {
+    "id": "standard-warrior",
+    "set": "Standard",
+    "name": "Warrior",
+    "faction": "Town",
+    "class": "Elimination",
+    "description": "Challenge players to duels, leaving you both bleeding.",
+    "portraitUrl": "/images/roles/T_WarriorPortrait.png"
+  },
+  {
+    "id": "starter-warrior",
+    "set": "Starter",
+    "name": "Warrior",
+    "faction": "Town",
+    "class": "Elimination",
+    "description": "Challenge players to duels, leaving you both bleeding.",
+    "portraitUrl": "/images/roles/T_WarriorPortrait.png"
+  },
+  {
+    "id": "dark-weaver",
+    "set": "Dark",
+    "name": "Weaver",
+    "faction": "Village",
+    "class": "Manipulation",
+    "description": "",
+    "portraitUrl": "/images/roles/T_Weaver_Portrait.png"
+  },
+  {
+    "id": "standard-werecat",
+    "set": "Standard",
+    "name": "Werecat",
+    "faction": "Neutral",
+    "class": "Manipulation",
+    "description": "Flip teams if you survive an accusation.",
+    "portraitUrl": "/images/roles/T_WerecatPortrait.png"
+  },
+  {
+    "id": "starter-werecat",
+    "set": "Starter",
+    "name": "Werecat",
+    "faction": "Neutral",
+    "class": "Manipulation",
+    "description": "Flip teams if you survive an accusation.",
+    "portraitUrl": "/images/roles/T_WerecatPortrait.png"
+  },
+  {
+    "id": "standard-weresheep",
+    "set": "Standard",
+    "name": "Weresheep",
+    "faction": "Werewolf",
+    "class": "Manipulation",
+    "description": "Turn a player into a sheep.",
+    "portraitUrl": "/images/roles/T_WeresheepPortrait.png"
+  },
+  {
+    "id": "standard-werewolf-herbalist",
+    "set": "Standard",
+    "name": "Werewolf Herbalist",
+    "faction": "Werewolf",
+    "class": "Protection",
+    "description": "Use both the healing and harmful properties of the herbs around you.",
+    "portraitUrl": "/images/roles/T_WerewolfHerbalist_Portrait.png"
+  },
+  {
+    "id": "starter-werewolf-herbalist",
+    "set": "Starter",
+    "name": "Werewolf Herbalist",
+    "faction": "Werewolf",
+    "class": "Protection",
+    "description": "Use both the healing and harmful properties of the herbs around you.",
+    "portraitUrl": "/images/roles/T_WerewolfHerbalist_Portrait.png"
+  },
+  {
+    "id": "standard-werewolf-scholar",
+    "set": "Standard",
+    "name": "Werewolf Scholar",
+    "faction": "Werewolf",
+    "class": "Investigation",
+    "description": "Study players, learning what they are capable of.",
+    "portraitUrl": "/images/roles/T_WerewolfScholar_Portrait.png"
+  },
+  {
+    "id": "starter-werewolf-scholar",
+    "set": "Starter",
+    "name": "Werewolf Scholar",
+    "faction": "Werewolf",
+    "class": "Investigation",
+    "description": "Study players, learning what they are capable of.",
+    "portraitUrl": "/images/roles/T_WerewolfScholar_Portrait.png"
+  },
+  {
+    "id": "standard-werewolf-shaman",
+    "set": "Standard",
+    "name": "Werewolf Shaman",
+    "faction": "Werewolf",
+    "class": "Protection",
+    "description": "Call upon Divine powers to protect those worthy.",
+    "portraitUrl": "/images/roles/T_WerewolfShamanPortrait.png"
+  },
+  {
+    "id": "starter-werewolf-shaman",
+    "set": "Starter",
+    "name": "Werewolf Shaman",
+    "faction": "Werewolf",
+    "class": "Protection",
+    "description": "Call upon Divine powers to protect those worthy.",
+    "portraitUrl": "/images/roles/T_WerewolfShamanPortrait.png"
+  },
+  {
+    "id": "standard-werewolf-tracker",
+    "set": "Standard",
+    "name": "Werewolf Tracker",
+    "faction": "Werewolf",
+    "class": "Investigation",
+    "description": "Track important targets to find out who they target.",
+    "portraitUrl": "/images/roles/T_WerewolfTrackerPortrait.png"
+  },
+  {
+    "id": "starter-werewolf-tracker",
+    "set": "Starter",
+    "name": "Werewolf Tracker",
+    "faction": "Werewolf",
+    "class": "Investigation",
+    "description": "Track important targets to find out who they target.",
+    "portraitUrl": "/images/roles/T_WerewolfTrackerPortrait.png"
+  },
+  {
+    "id": "standard-werewolf-trickster",
+    "set": "Standard",
+    "name": "Werewolf Trickster",
+    "faction": "Werewolf",
+    "class": "Elimination",
+    "description": "Deceive the town by faking announcements.",
+    "portraitUrl": "/images/roles/T_WerewolfTrickster_P.png"
+  },
+  {
+    "id": "dark-widow",
+    "set": "Dark",
+    "name": "Widow",
+    "faction": "Neutral",
+    "class": "Elimination",
+    "description": "",
+    "portraitUrl": "/images/roles/T_Widow_Portrait.png"
+  },
+  {
+    "id": "dark-willow",
+    "set": "Dark",
+    "name": "Willow",
+    "faction": "LesserEvil",
+    "class": "Investigation",
+    "description": "",
+    "portraitUrl": "/images/roles/T_WeepingWillow_Portrait.png"
+  },
+  {
+    "id": "standard-wolf-cub",
+    "set": "Standard",
+    "name": "Wolf Cub",
+    "faction": "Werewolf",
+    "class": "Manipulation",
+    "description": "Sacrifice yourself to empower the other Wolves. ",
+    "portraitUrl": "/images/roles/T_WolfCubPortrait.png"
+  },
+  {
+    "id": "starter-wolf-cub",
+    "set": "Starter",
+    "name": "Wolf Cub",
+    "faction": "Werewolf",
+    "class": "Manipulation",
+    "description": "Sacrifice yourself to empower the other Wolves. ",
+    "portraitUrl": "/images/roles/T_WolfCubPortrait.png"
+  },
+  {
+    "id": "standard-wolf-girl",
+    "set": "Standard",
+    "name": "Wolf Girl",
+    "faction": "Werewolf",
+    "class": "Investigation",
+    "description": "Blend in with the Town as you find out what people are capable of.",
+    "portraitUrl": "/images/roles/T_WolfGirlPortrait.png"
+  },
+  {
+    "id": "starter-wolf-girl",
+    "set": "Starter",
+    "name": "Wolf Girl",
+    "faction": "Werewolf",
+    "class": "Investigation",
+    "description": "Blend in with the Town as you find out what people are capable of.",
+    "portraitUrl": "/images/roles/T_WolfGirlPortrait.png"
+  },
+  {
+    "id": "dark-wretch",
+    "set": "Dark",
+    "name": "Wretch",
+    "faction": "Village",
+    "class": "Manipulation",
+    "description": "",
+    "portraitUrl": "/images/roles/T_Wretch_Portrait.png"
+  },
+  {
+    "id": "standard-zombie",
+    "set": "Standard",
+    "name": "Zombie",
+    "faction": "Evil",
+    "class": "Manipulation",
+    "description": "rAaAa Gggg OrRr aaraaa RAa!!",
+    "portraitUrl": "/images/roles/T_ZombiePortrait.png"
+  }
+]
