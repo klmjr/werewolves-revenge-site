@@ -61,9 +61,9 @@ export default function EventCalendar() {
   }));
 
   return (
-    <div className="w-full max-w-4xl mx-auto p-4">
+    <div className="w-full max-w-4xl mx-auto p-4 mt-24" style={{ marginTop: '88px' }}>
       <div className="bg-white rounded-lg shadow-lg p-6">
-        <h2 className="text-2xl font-bold mb-4 text-gray-800">Event Calendar</h2>
+        <h2 className="text-2xl font-bold mb-4 text-red-800">Werewolves Revenge Events</h2>
         
         <div className="calendar-wrapper">
           <FullCalendar
@@ -77,7 +77,7 @@ export default function EventCalendar() {
             headerToolbar={{
               left: 'prev,next today',
               center: 'title',
-              right: 'dayGridMonth',
+              right: '',
             }}
             height="auto"
             contentHeight="auto"
@@ -150,23 +150,72 @@ export default function EventCalendar() {
       )}
 
       <style>{`
-        .calendar-wrapper :global(.fc) {
+        .calendar-wrapper .fc {
           font-family: inherit;
+          color: #111827 !important;
         }
-        
-        .calendar-wrapper :global(.fc button) {
+
+        .calendar-wrapper .fc *,
+        .calendar-wrapper .fc a {
+          color: #111827 !important;
+        }
+
+        .calendar-wrapper .fc button {
           text-transform: capitalize;
         }
-        
-        .calendar-wrapper :global(.fc-event) {
+
+        .calendar-wrapper .fc-event {
           cursor: pointer;
           background-color: #2563eb;
           border-color: #1d4ed8;
+          color: #fff !important;
         }
 
-        .calendar-wrapper :global(.fc-event:hover) {
+        .calendar-wrapper .fc-event:hover {
           background-color: #1d4ed8;
           border-color: #1e40af;
+        }
+
+        /* Improve visibility of headers, day numbers, and grid */
+        .calendar-wrapper .fc .fc-col-header-cell .fc-col-header-cell-cushion,
+        .calendar-wrapper .fc .fc-col-header-cell .fc-col-header-cell-cushion a,
+        .calendar-wrapper .fc .fc-daygrid-day-number {
+          color: #111827 !important;
+          font-weight: 700;
+        }
+
+        .calendar-wrapper .fc .fc-col-header-cell {
+          background: #f8fafc !important;
+        }
+
+        .calendar-wrapper .fc .fc-scrollgrid-section-header {
+          color: #111827 !important;
+        }
+
+        .calendar-wrapper .fc .fc-daygrid-event-main {
+          color: #fff !important;
+        }
+
+        .calendar-wrapper .fc .fc-toolbar-title {
+          color: #111827 !important;
+          font-weight: 700;
+        }
+
+        .calendar-wrapper .fc .fc-daygrid-day-bg {
+          background: transparent;
+        }
+
+        /* Force all calendar text to dark for visibility */
+        .calendar-wrapper .fc,
+        .calendar-wrapper .fc * {
+          color: #111827 !important;
+          fill: #111827 !important;
+          stroke: #111827 !important;
+        }
+
+        .calendar-wrapper .fc a,
+        .calendar-wrapper .fc button {
+          color: #111827 !important;
         }
       `}</style>
     </div>
