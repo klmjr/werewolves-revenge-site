@@ -2,7 +2,8 @@
 //
 // Repeatable batch optimizer for game artwork exported by export_roles.py
 // (role portraits/images in public/images/roles, ability icons in
-// public/images/abilities). Converts every PNG to WebP, downscaling
+// public/images/abilities, inline keyword icons in public/images/keywords).
+// Converts every PNG to WebP, downscaling
 // anything larger than MAX_DIMENSION (these only ever render as small grid
 // thumbnails or a single detail-page portrait/icon, so the original
 // full-resolution exports are massive overkill), then deletes the source
@@ -14,7 +15,11 @@ import { readdir, stat, mkdir, unlink } from 'node:fs/promises';
 import path from 'node:path';
 import sharp from 'sharp';
 
-const DIRS = [path.resolve('public/images/roles'), path.resolve('public/images/abilities')];
+const DIRS = [
+  path.resolve('public/images/roles'),
+  path.resolve('public/images/abilities'),
+  path.resolve('public/images/keywords'),
+];
 const MAX_DIMENSION = 1000; // px, longest edge
 const WEBP_QUALITY = 82;
 

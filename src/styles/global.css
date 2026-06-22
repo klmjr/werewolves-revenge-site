@@ -135,3 +135,23 @@
 .steam-post .bb_strong {
   color: #fff;
 }
+
+/*
+ * Inline keyword icons.
+ * Role/ability descriptions use Unreal RichTextBlock decorators like
+ * `<img id="Learn"/>` for inline icons (see export_roles.py's
+ * KEYWORD_DECORATORS and convertIcons()). The source icon textures are
+ * plain white/alpha shapes tinted at runtime in-engine, so we reproduce
+ * that with a CSS mask + `--kw`/`--kw-icon` custom properties instead of
+ * baking a single fixed color into the image itself.
+ */
+
+.kw-icon {
+  display: inline-block;
+  width: 1.65em;
+  height: 1.65em;
+  vertical-align: -0.3em;
+  background-color: var(--kw);
+  -webkit-mask: var(--kw-icon) no-repeat center / contain;
+  mask: var(--kw-icon) no-repeat center / contain;
+}

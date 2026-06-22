@@ -1,7 +1,51 @@
 import unreal
 import json
 import os
+import re
 import builtins
+
+# Inline icon decorators used in Unreal RichTextBlock descriptions, written
+# as `<img id="Name"/>`. "textureName" is the underlying texture asset name,
+# which sometimes differs from the decorator name (e.g. "Perish" -> "Die")
+# -- the actual file in public/images/keywords might be saved under either
+# name, so resolveKeywordIconFile() below tries both.
+KEYWORD_DECORATORS = {
+    "Attack": {"textureName": "Attack", "color": "#883532"},
+    "UnstoppableAttack": {"textureName": "UnstoppableAttack", "color": "#883532"},
+    "Bleed": {"textureName": "Bleed", "color": "#883532"},
+    "Ignite": {"textureName": "Ignite", "color": "#883532"},
+    "Poison": {"textureName": "Poison", "color": "#883532"},
+    "Protect": {"textureName": "Protect", "color": "#5F90C4"},
+    "DivineProtection": {"textureName": "DivineProtection", "color": "#5F90C4"},
+    "Heal": {"textureName": "Heal", "color": "#5F90C4"},
+    "PermanentDefence": {"textureName": "PermanentDefence", "color": "#5F90C4"},
+    "Untargetable": {"textureName": "Untargetable", "color": "#839C38"},
+    "Exposed": {"textureName": "Exposed", "color": "#839C38"},
+    "Frail": {"textureName": "Frail", "color": "#839C38"},
+    "Convert": {"textureName": "Convert", "color": "#839C38"},
+    "Remove": {"textureName": "Remove", "color": "#ffffff"},
+    "Transform": {"textureName": "Transform", "color": "#839C38"},
+    "Assume": {"textureName": "Assume", "color": "#839C38"},
+    "Redirect": {"textureName": "Redirect", "color": "#839C38"},
+    "Meet": {"textureName": "Meet", "color": "#839C38"},
+    "ShareFate": {"textureName": "ShareFate", "color": "#839C38"},
+    "Share": {"textureName": "Share", "color": "#839C38"},
+    "Reveal": {"textureName": "Revealed", "color": "#839C38"},
+    "Role": {"textureName": "Role", "color": "#ffffff"},
+    "Class": {"textureName": "Class", "color": "#ffffff"},
+    "Capability": {"textureName": "Capabilities", "color": "#ffffff"},
+    "Targets": {"textureName": "Targets", "color": "#ffffff"},
+    "Execute": {"textureName": "Execute", "color": "#883532"},
+    "Miss": {"textureName": "Miss", "color": "#839C38"},
+    "Learn": {"textureName": "Learn", "color": "#B38FC4"},
+    "Faction": {"textureName": "Faction", "color": "#ffffff"},
+    "Active": {"textureName": "Active", "color": "#ffffff"},
+    "Perish": {"textureName": "Die", "color": "#ffffff"},
+    "Hemorrhage": {"textureName": "Hemorrhage_", "color": "#883532"},
+    "Incinerate": {"textureName": "Incinerate", "color": "#883532"},
+    "Neighbours": {"textureName": "Neighbours", "color": "#ffffff"},
+    "Enhance": {"textureName": "Enhance", "color": "#839C38"},
+}
 
 # Diagnostic logging that survives a hard editor crash.
 # In-editor print() output is lost the moment the editor crashes, so every
@@ -27,11 +71,14 @@ def export_roles_from_sets():
     output_path = os.path.join(script_dir, "data", "roles.json").replace("\\", "/")
     img_export_dir = os.path.join(root_dir, "public", "images", "roles").replace("\\", "/")
     ability_img_export_dir = os.path.join(root_dir, "public", "images", "abilities").replace("\\", "/")
+    keywords_dir = os.path.join(root_dir, "public", "images", "keywords").replace("\\", "/")
 
     if not os.path.exists(img_export_dir):
         os.makedirs(img_export_dir)
     if not os.path.exists(ability_img_export_dir):
         os.makedirs(ability_img_export_dir)
+    if not os.path.exists(keywords_dir):
+        os.makedirs(keywords_dir)
 
     asset_registry = unreal.AssetRegistryHelpers.get_asset_registry()
 
@@ -109,7 +156,9 @@ def export_roles_from_sets():
                     print(f"    -> ability[{i}]: resolved to None, skipping")
                     continue
                 print(f"    -> ability[{i}]: resolved to {ability_asset.get_name()}")
-                abilities_data.append(exportAbility(ability_asset, ability_img_export_dir))
+                abilities_data.append(exportAbility(ability_asset, ability_img_export_dir, keywords_dir))
+
+            description = str(role_asset.get_editor_property("Description"))
 
             role_info = {
                 "id": unique_role_id,
@@ -118,7 +167,8 @@ def export_roles_from_sets():
                 "faction": faction_obj.get_name() if faction_obj else "Unknown",
                 "factionName": str(faction_obj.get_editor_property("Name")) if faction_obj else "Unknown",
                 "class": class_obj.get_name() if class_obj else "Unknown",
-                "description": str(role_asset.get_editor_property("Description")),
+                "description": description,
+                "descriptionHtml": convertIcons(description, keywords_dir),
                 # Unreal's exporter only writes PNGs
                 # You must run `npm run optimize-images` to convert the pngs to webp
                 "imageUrl": f"/images/roles/{image_filename.replace('.png', '.webp')}",
@@ -210,6 +260,79 @@ def enumToStr(value):
     text = str(value)
     return text.split("::")[-1] if "::" in text else text
 
+_keyword_icon_index_cache = {}
+
+def resolveKeywordIconFile(keywords_dir, candidates):
+    """Finds the actual filename in public/images/keywords matching one of
+    the given candidate names (case/whitespace-insensitive, extension
+    ignored), since files there were added by hand and don't perfectly
+    match either the decorator name or the underlying texture name in every
+    case (e.g. "Perish" vs its texture "Die").
+
+    Returns the matched filename's base name (no extension), or None.
+    """
+    if keywords_dir not in _keyword_icon_index_cache:
+        index = {}
+        if os.path.exists(keywords_dir):
+            for f in os.listdir(keywords_dir):
+                base, _ext = os.path.splitext(f)
+                index[base.strip().lower()] = base.strip()
+        _keyword_icon_index_cache[keywords_dir] = index
+
+    index = _keyword_icon_index_cache[keywords_dir]
+    for candidate in candidates:
+        key = candidate.strip().lower()
+        if key in index:
+            return index[key]
+    return None
+
+def convertIcons(text, keywords_dir):
+    """Converts `<img id="Name"/>` inline icon decorators in role/ability
+    descriptions into a small masked/tinted icon <span> (see .kw-icon in
+    global.css), using KEYWORD_DECORATORS for the color.
+
+    This does NOT add any text styling (bold, color, etc) for other
+    decorators -- but it does strip them out (keeping their inner text)
+    before converting icons. This isn't a styling feature, it's a safety
+    requirement: descriptions also contain other Unreal RichTextBlock
+    decorators like "<b>text</>" or "<p>text</>", and some of those (like
+    "<b>") happen to be real HTML tags. Left as raw text, the browser parses
+    "<b>" as actual unclosed bold HTML (since "</>" isn't valid HTML and
+    doesn't close it), which bolds everything after it for the rest of the
+    page. Stripping all non-icon tags first avoids that regardless of which
+    decorator tag names happen to collide with real HTML elements.
+    """
+    if not text:
+        return text
+
+    # Strip any wrapping decorator -> keep inner text only. Closing tag can
+    # be the generic "</>" or repeat the opening tag name (e.g. "<b>x</b>").
+    text = re.sub(r"<(\w+)>(.*?)</\1?>", r"\2", text)
+
+    # Strip any other stray/self-closing decorator that isn't the "<img
+    # .../>" icon syntax handled below.
+    text = re.sub(r"</?(?!img\b)\w+[^>]*>", "", text)
+
+    def replace_icon(match):
+        name = match.group(1)
+        decorator = KEYWORD_DECORATORS.get(name)
+        if not decorator:
+            print(f"    !! Unknown icon decorator id '{name}'")
+            return ""
+
+        icon_file = resolveKeywordIconFile(keywords_dir, [name, decorator["textureName"]])
+        if not icon_file:
+            print(f"    !! No keyword icon file found for decorator '{name}' (tried '{name}', '{decorator['textureName']}')")
+            return ""
+
+        return (
+            f'<span class="kw-icon" style="--kw: {decorator["color"]}; '
+            f'--kw-icon: url(\'/images/keywords/{icon_file}.webp\')" '
+            f'role="img" aria-label="{name}" title="{name}"></span>'
+        )
+
+    return re.sub(r'<img\s+id="(\w+)"\s*/>', replace_icon, text)
+
 def exportGroupOrResource(obj, img_export_dir):
     """Exports a Group or Resource data asset (both share the same Name/Description/Icon/Colour shape).
 
@@ -229,7 +352,7 @@ def exportGroupOrResource(obj, img_export_dir):
         "iconUrl": f"/images/roles/{icon_filename.replace('.png', '.webp')}",
     }
 
-def exportAbility(ability_asset, ability_img_export_dir):
+def exportAbility(ability_asset, ability_img_export_dir, keywords_dir):
     """Exports a single Ability data asset to a plain dict, including its icon.
 
     NOTE: "Ability Type" and "Cost Type" are deliberately NOT read here.
@@ -253,6 +376,7 @@ def exportAbility(ability_asset, ability_img_export_dir):
         "id": ability_asset.get_name(),
         "name": name,
         "description": description,
+        "descriptionHtml": convertIcons(description, keywords_dir),
         "iconUrl": f"/images/abilities/{icon_filename.replace('.png', '.webp')}",
         "abilityType": None,
         "costType": None,
