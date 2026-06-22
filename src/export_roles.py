@@ -70,8 +70,10 @@ def export_roles_from_sets():
                 "factionName": str(faction_obj.get_editor_property("Name")) if faction_obj else "Unknown",
                 "class": class_obj.get_name() if class_obj else "Unknown",
                 "description": str(role_asset.get_editor_property("Description")),
-                "imageUrl": f"/images/roles/{image_filename}",
-                "portraitUrl": f"/images/roles/{portrait_filename}"
+                # Unreal's exporter only writes PNGs
+                # You must run `npm run optimize-images` to convert the pngs to webp
+                "imageUrl": f"/images/roles/{image_filename.replace('.png', '.webp')}",
+                "portraitUrl": f"/images/roles/{portrait_filename.replace('.png', '.webp')}"
             }
             
             json_data.append(role_info)
@@ -94,9 +96,11 @@ def exportImage(texture, img_export_dir, default_filename):
 
     filename = f"{texture.get_name()}.png"
     export_path = os.path.join(img_export_dir, filename)
+    webp_path = os.path.join(img_export_dir, filename.replace(".png", ".webp"))
 
-    # Only export if file doesn't already exist to save time
-    if not os.path.exists(export_path):
+    # Only export if neither the PNG nor its optimized .webp already exists,
+    # since `npm run optimize-images` deletes the PNGs after converting them.
+    if not os.path.exists(export_path) and not os.path.exists(webp_path):
         task = unreal.AssetExportTask()
         task.object = texture
         task.filename = export_path
